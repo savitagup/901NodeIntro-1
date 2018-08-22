@@ -1,12 +1,14 @@
-# Chapter 2 Practice with NPM
+# Chapter 2: Practice with NPM
 ## Objectives:
 * You will use NPM to obtain packages for a project
 
 ## Steps
 
-1. Open a terminal/command prompt in the /Begin folder. 
+1. If not already created, create a `WIP` directory at the same level as your Demos and Labs folder. Ask instructor if you need help with this step. 
 
-1. Issue this command:
+1. Within \WIP create a subdirectory called \npm-practice
+
+1. Open a command prompt (VSCode integrated terminal) and issue this command:
 `npm init`
 
 1. Go through the wizard to create a package.json. Call the project `timeexample` and accept given defaults. You can supply whatever info that you like. This is more for you to practice and see the outcome of the wizard.
@@ -20,18 +22,19 @@ npm install moment --save
 
 1. Notice that node_modules directory is created
 
-1. In the /Begin folder, open the blank file called `timeExample.js`
+1. Create a file called `timeExample.js`
 
 1. Inside this file, add this code:
-```javascript
-var moment = require('moment');
-console.log(moment().format('MM-DD-YYYY'));
-```
+    ```javascript
+    var moment = require('moment');
+    console.log(moment().format('MM-DD-YYYY'));
+    ```
+
 1. execute the code using `node timeExample.js` or leave off the .js extension. Remember - you MUST be in the location of this file to execute it. Can open the terminal at the correct location by right-clicking the file and choosing Open Terminal in VS Code.
 
 1. Visit the website [momentjs.com](http://momentjs.com) and browse the front page of examples.
 
-1. Review the syntax and write code to display the difference between now and 01-01-2011.  - it should display something similar to 7 years ago.
+1. Review the syntax and write code to display the difference between now and 01-01-2011.  Your output should display something similar to X years ago where X is the number of years between.
 
 
 ## Bonus ##
