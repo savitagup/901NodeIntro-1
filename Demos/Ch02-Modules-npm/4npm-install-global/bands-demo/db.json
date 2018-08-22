@@ -38,10 +38,10 @@
     },
     {
       "name": "Slipknot",
-      "city": "Des Moines",
+      "city": "Des Moines, IA",
       "country": "USA",
       "yearFormed": "1995",
-      "genres": [
+      "genres[]": [
         "Heavy Metal",
         "Nu Metal"
       ],
@@ -75,9 +75,10 @@
       "city": "Bristol",
       "country": "UK",
       "yearFormed": "1991",
-      "genres": [
-        "Experimental",
-        "Trip Hop"
+      "genres[]": [
+        "Trip Hop",
+        "Experimental Rock",
+        "Downtempo"
       ],
       "id": 7
     }

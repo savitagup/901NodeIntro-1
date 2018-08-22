@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Chapter 1: Getting Started with node
+=======
+# Chapter 1: Execute JS
+>>>>>>> febc6c636fbe6ccdf4f50096be874d7b48b6a8bf
 ## Concepts
 
 1. In your \WIP directory, create a directory structure of 

@@ -1,15 +1,13 @@
-
+/**
+ * Created by Matthew on 2/1/2017.
+ */
 
 function bandsTable() {
     var xhr = new XMLHttpRequest();
     var url = '/band'; //API path
 
     xhr.onreadystatechange = function () {
-        if (xhr.readyState == 2 && xhr.status == 404) {
-            document.getElementById("showBands").innerHTML = 'Unable to access database';
-        }
-
-        if (xhr.readyState === 4 && xhr.status == 200) {
+        if (xhr.readyState === 4) {
             var myArr = JSON.parse(xhr.responseText);
             bandsData(myArr);
             //console.log(xhr.response); //Outputs a DOMString by default
@@ -42,7 +40,6 @@ function deleteBand(id) {
     xhr.open('DELETE', url, true);
     xhr.send();
 
-    bandsTable();
+    showBands();
 }
 
-bandsTable();
