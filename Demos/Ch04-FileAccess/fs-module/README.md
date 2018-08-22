@@ -1,0 +1,1 @@
+Open a terminal window here and go through the files in this directory in ordr. Reading the content and executing the files using Node.

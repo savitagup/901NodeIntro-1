@@ -1,0 +1,9 @@
+{
+  "name": "middleware-body-parser",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-lowercase-paths": "^1.0.0",
+    "serve-favicon": "^2.4.5"
+  }
+}
