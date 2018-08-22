@@ -1,4 +1,4 @@
-# Chapter 00B: Modern JS
+# Chapter 1: Execute JS
 ## Concepts
 
 Use new string features like backticks and
