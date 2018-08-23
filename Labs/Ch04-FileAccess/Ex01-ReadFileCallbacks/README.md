@@ -8,7 +8,7 @@
 
 ## Detailed Steps
 
-1. Notice the require fo the fs module.
+1. Notice the require of the fs module.
 
 1. In order to read the `./input.txt` file, pass the filename as the first argument into fs.readFile 
 
