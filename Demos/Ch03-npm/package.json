@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bhttp": "^1.2.4",
-    "bluebird": "^3.5.0"
+    "bluebird": "^3.5.0",
+    "moment": "^2.22.2"
   }
 }

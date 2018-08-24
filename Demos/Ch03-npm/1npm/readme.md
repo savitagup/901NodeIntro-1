@@ -2,7 +2,7 @@
 
 1. Open timeExample.js and review the code.
 
-# Chapter 2 Practice with NPM
+# Chapter 3 Practice with NPM
 ## Objectives:
 * You will use NPM to obtain a package for a project
 

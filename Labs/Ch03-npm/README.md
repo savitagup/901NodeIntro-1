@@ -1,32 +1,35 @@
-# Chapter 3 Node fundamentals
+# Chapter 2 Node fundamentals: Event Emitter
 ## Objectives:
 * Practice with Node's EventEmitter 
 * Raise Events using EventEmitter's emit()
 * Create named handlers and inline functions
 * Practice with on and once 
 
+## Dir/File setup
+
+Create the folder structure /WIP/events and a file within called events.js  If you need additional help, ask your instructor or fellow students. You can also refer to the solution in /End/events.js - just be sure that it makes sense to you - then recreate it.
+
 ## Overview (Detailed steps below if you need help)
 * Create an app that raises an event 'work'
 * When the event is raised the first time only, print out, 'Clocking In'
 * Each time the 'work' event is emitted - events should fire to print the steps for TDD (test driven development)
 * Your output should look like the following:
-<pre>
-*******
-Clocking in...
-Write Tests
-Code
-Refactor
-Go to Meeting
-*******
-Write Tests
-Code
-Refactor
-Go to Meeting
-</pre>
+    ```
+    *******
+    Clocking in...
+    Write Tests
+    Code
+    Refactor
+    Go to Meeting
+    *******
+    Write Tests
+    Code
+    Refactor
+    Go to Meeting
+    ```
 
 ## Detailed Steps
 
-1. Do your work in the empty file in /Begin/events.js. If you need additional help, ask your instructor or fellow students. You can also refer to the solution in /End/events.js - just be sure that it makes sense to you - then recreate it.
 
 1. Require the events module and store it in a reference called events
 
