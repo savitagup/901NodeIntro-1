@@ -5,18 +5,25 @@
 
 ## Steps
 
-1. In your \WIP directory, create directories \WIP\Ch01\modules
+1. In your \WIP directory, create directories \WIP\Ch02\modules
 
-1. Create a file called `inputs.js`
+1. Create a file called `main.js`
 
-1. In this file, use process.argv to get the command line input as an array.
+1. In this file add this line:
+    ```javascript
+    require('./shapes.js');
+    ```
 
-1. display the input using console.log
+1. Open a VSCode terminal at this pont by right clicking on the file and choosing open at terminal.
 
-1. Execute the code using `node inputs.js`
+1. Use `node main` to run the file and read the error.
+    
+    If you ever have a bad reference to a module this is what you will see.
 
-## Bonus ##
+1. READ: Notice how the Node Module class is trying to load the specified module. Node loads modules and caches them. This was in your code if there is more than one use of a module, yu get the same instance that has been cached.
 
-1. Write a program that takes command line input of a name.
+1. READ: Here we are looking in the local file system for a module using "./filename.js"
 
-1. Process this input by displaying the reversed version of the name.
+1. Now create a file in the same directory called shapes.js.
+
+https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/ 
