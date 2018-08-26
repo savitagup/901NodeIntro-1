@@ -1,4 +1,4 @@
-# Chapter 3 Practice with NPM
+# Chapter 3 Practice with NPM local
 ## Objectives:
 
 * This is a sample project that demonstrates using an npm installed module.
