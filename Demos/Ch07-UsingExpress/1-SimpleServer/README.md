@@ -19,4 +19,4 @@ http://localhost:3000
 1. Stop the server.
 
 1. Now examine the code in simpleServer2.  and
-run simpleServer2
+run simpleServer2 - what happens?
