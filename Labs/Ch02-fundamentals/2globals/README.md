@@ -1,11 +1,11 @@
-# Chapter 2 Practice with core modules and globals
+# Chapter 2 Practice with globals
 
 ## Objectives:
-* Follow the steps below to create node programs using globals and core modules.
+* Follow the steps below to create node programs using globals
 
 ## Steps
 
-1. In your \WIP directory, create directories \WIP\Ch02\modules
+1. In your \WIP directory, create the directory structure \WIP\Ch02\globals
 
 1. Create a file called `inputs.js`
 

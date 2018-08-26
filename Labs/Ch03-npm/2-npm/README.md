@@ -4,7 +4,11 @@
 
 ## Steps
 
-1. If not already created, create a `WIP` directory at the same level as your Demos and Labs folder. Ask instructor if you need help with this step. 
+
+1. In your \WIP directory, create the directory structure \WIP\Ch03\npm-local
+
+1. Create a file called `inputs.js`
+ 
 
 1. Within \WIP create a subdirectory called \npm-practice
 
