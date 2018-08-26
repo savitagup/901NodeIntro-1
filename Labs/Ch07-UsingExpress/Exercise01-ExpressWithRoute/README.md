@@ -6,9 +6,15 @@
 * Check the Demos or solution if you need additional hints
 
 ## Steps
-1. In the Begin folder, create a new Node.js project: `npm init -y`
+1. In your WIP directory, create this structure:
+`WIP\Ch07\express-server`
+
+1. In this directory, create a new Node.js project: `npm init -y`
+
 1. Install Express: `npm install --save express`
+
 1. Create a `config.json` file, containing a `port` key with the value `3000`
+
 1. Create a `server.js` file
     - Require the `express` library as a `const` named `express`
     - Call `express()`, and store the result in a new variable named `app` [this is the Express application]
