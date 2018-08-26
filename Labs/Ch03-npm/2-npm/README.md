@@ -43,6 +43,6 @@ npm install moment --save
 
 1. Follow the steps as before to add this package to the package.json.
 
-1. Take the current time and display it as hours with the timezones in EST and PDT.
-Ex. 2pm EST is 11am PDT
+1. Take the current time and display it as hours with the timezones in Eastern and Pacific.
+Example output: It is now 11am Eastern and 1pm Pacific.
 
