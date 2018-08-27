@@ -1,6 +1,8 @@
 #not tracking package-lock.json due to demo structur
 package-lock.json
 
+WIP/
+
 # Logs
 logs
 *.log
