@@ -16,7 +16,7 @@
 	<script src="js/tableHelper.js"></script>
 	<script>
 
-		ajaxService.getJSON('data.json.txt').then(function(data) { //Success
+		ajaxService.getJSON('data.json').then(function(data) { //Success
 
 			var mappedData = data.map(function(dataItem) {
 		    	for (var prop in dataItem) {
