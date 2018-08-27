@@ -1,4 +1,4 @@
-1. In \Node directory create a directory called \learnyounode
+1. In your \WIP directory create a directory called \learnyounode
 
 1. , run this command 
     ```
@@ -7,9 +7,9 @@
 
 1. From a windows command prompt (not VSCode) execute the command learnyounode. (it will look better from a command prompt) MAXIMIZE BROWSER
 
-1. Execue the command learnyounode to bring up teh menu
+1. Execute the command learnyounode to bring up the menu
 
-1. you may nee dto scroll up to see start of instructions.
+1. you may need to scroll up to see start of instructions.
 
 1. Choose the first item in the menu Hello World
 
