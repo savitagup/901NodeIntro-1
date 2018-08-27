@@ -4,8 +4,10 @@
 * Pass data (locals) to rendered templates
 
 ## Steps
-1. Navigate to the directory Labs/Ch07-UsingExpress/Exercise02-TemplateWithData/__Begin__/code
+1. Continue working in your `WIP\Ch07\express-server` directory. If you did not complete the last exercise, you can copy the solution from the solutions directory to start.
+
 1. Install Pug with `npm install --save pug`
+
 1. Edit `server.js`
     - Use require to define a path
     - Use the `app.set()` method with the following arguments: [app.set is for configuring Express options]

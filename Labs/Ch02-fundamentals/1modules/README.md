@@ -5,7 +5,7 @@
 
 ## Steps
 
-1. In your \WIP directory, create directories \WIP\Ch02\modules
+1. In your \WIP directory, create directories `\WIP\Ch02\modules`
 
 1. Create a file called `main.js`
 
