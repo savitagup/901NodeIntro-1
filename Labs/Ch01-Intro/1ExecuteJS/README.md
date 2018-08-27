@@ -1,11 +1,16 @@
 # Chapter 1: Getting Started with node
 
-## Concepts
+## Objectives:
+* Practice executing JavaScript in Node
 
-1. In your \WIP directory, create a directory structure of 
-`\WIP\Ch01\js`
+## Directory and files
 
-1. In this directory create a file called `jspractice.js`
+1. In your \WIP directory, create your working directory: `\WIP\Ch01\js`
+
+## Steps
+
+### simple-concat.js
+1. In this directory create a file called `simple-concat.js`
 
 1. In this file create variables to hold your firstName and LastName 
 
@@ -13,14 +18,12 @@
   Hello
   firstName LastName
 
-1. Test your code by executing it using `node jspractice.js` from the command line.
+1. Test your code by executing it using `node simple-concat.js` from the command line.
 
-1. Now create a constructor function called Person, which takes in a firstName, lastName, and has a function called getFullName which uses a template expression to return the fullName.  Create a new person1 by calling the function passing your firstName and lastName variables. Use console.log and pass in person1.getFullName(). Run the code to see that it works as expected. For help, scroll down past the grey box:
+### constructor-function.js
+1. Now create a file called `constructor-function.js` with a  constructor function called Person, which takes in a firstName, lastName, and has a function called getFullName which uses a template expression to return the fullName.  Create a new person1 by calling the function passing firstName and lastName values. Use console.log and pass in person1.getFullName(). Run the code to see that it works as expected. For help, scroll down past the grey box:
 
-  ```javascript
-
-
-
+    ```javascript
 
 
 
@@ -28,18 +31,36 @@
 
 
 
-  function Person(fname, lname) {
-      this.fname = fname;
-      this.lname = lname;
-      this.getFullName = function() {
-          return `${fname} ${lname}`
-      }
-  }
 
-  let person1 = new Person(firstName, lastName);
-  console.log(person1.getFullName());
-  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function Person(fname, lname) {
+        this.fname = fname;
+        this.lname = lname;
+        this.getFullName = function() {
+            return `${fname} ${lname}`
+        }
+    }
+
+    let person1 = new Person(firstName, lastName);
+    console.log(person1.getFullName());
+    ```
  
+### weatherweek.js
 
 1. In a new file called `weatherweek.js` - create an array of objects with the high/low temps for the week.
 
@@ -47,12 +68,16 @@
 
     With the array, can you loop through and find the high and low temp of the week?
 
-    After finding the days, print somethgin similar to the following:
+    After finding the days, print something similar to the following:
 
-    
+    ```
+    The lowest temperature this week was on Wed and it was 65
+    The highest temperature this week was on Thurs and it was 102
+    ```
 
     Hint: keep track of a variable for lowestTempDay and highestTempDay, while looping compare to current day and replace variables as necessary.
 
+### jschallenges
 
 1. Create another subdirectory: `\WIP\Ch01\jschallenges`
 
@@ -67,23 +92,21 @@
   `javascripting`
 
 1. The CLI screen will present a list of challenges to you. Choose the first one and ignore the bits about creating a directory, you will do your work in VSCode in the folder you have already created. Skip to the first part which says to add this to introduction.js:
-  ```javascript
-    console.log('hello');
-  ```
+  
+    ```javascript
+      console.log('hello');
+    ```
 
 1. Right click on your introduction.js file to open to a terminal at this path.
 
 1. Note the command it says to run to verify your work. This is how you will check your work for future challenges.
 
-  ```
-  javascripting verify introduction.js
-  ```
+    ```
+    javascripting verify introduction.js
+    ```
 
 1. Read the output. If your code passes, go on to the next challenge by returning to the command prompt and hitting the up arrow to get to the menu again.
 
 1. Complete all challenges. 
 
 1. Mark your work as complete using the means specified for your class. Ask your instructor if they forgot to tell you. :)
-
-## Bonus
-
