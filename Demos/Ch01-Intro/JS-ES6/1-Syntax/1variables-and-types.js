@@ -4,7 +4,7 @@
             slashes is a comment.
             */
 
-            console.groupCollapsed('Declarations and Initializations...');
+            console.groupCollapsed('Declarations and Initialization...');
             let x = 3; // console.log(typeof x);
             x = 'abc'; // console.log(typeof x);
             x = true; // console.log(typeof x);
