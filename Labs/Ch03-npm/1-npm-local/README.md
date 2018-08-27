@@ -5,14 +5,9 @@
 ## Steps
 
 
-1. In your \WIP directory, create the directory structure \WIP\Ch03\npm-local
+1. In your \WIP directory, create the directory structure \WIP\Ch03\1npm-local
 
-1. Create a file called `inputs.js`
- 
-
-1. Within \WIP create a subdirectory called \npm-practice
-
-1. Open a command prompt (VSCode integrated terminal) and issue this command:
+1. Open a command prompt at that location (VSCode integrated terminal) and issue this command:
 `npm init`
 
 1. Go through the wizard to create a package.json. Call the project `timeexample` and accept given defaults. You can supply whatever info that you like. This is more for you to practice and see the outcome of the wizard.
