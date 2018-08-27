@@ -40,6 +40,20 @@
   console.log(person1.getFullName());
   ```
  
+
+1. In a new file called `weatherweek.js` - create an array of objects with the high/low temps for the week.
+
+    An example to get started { day: “Monday”, high: 80 }   
+
+    With the array, can you loop through and find the high and low temp of the week?
+
+    After finding the days, print somethgin similar to the following:
+
+    
+
+    Hint: keep track of a variable for lowestTempDay and highestTempDay, while looping compare to current day and replace variables as necessary.
+
+
 1. Create another subdirectory: `\WIP\Ch01\jschallenges`
 
 1. In this directory create a file called `introduction.js`.
