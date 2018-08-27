@@ -9,9 +9,36 @@
 
 1. In this file create variables to hold your firstName and LastName 
 
-1. Use backticks and template expressions instead of concatenation to display a greeting on two lines as follows:
+1. Use back ticks and template expressions instead of concatenation to display a greeting on two lines as follows:
   Hello
   firstName LastName
+
+1. Test your code by executing it using `node jspractice.js` from the command line.
+
+1. Now create a constructor function called Person, which takes in a firstName, lastName, and has a function called getFullName which uses a template expression to return the fullName.  Create a new person1 by calling the function passing your firstName and lastName variables. Use console.log and pass in person1.getFullName(). Run the code to see that it works as expected. For help, scroll down past the grey box:
+
+  ```javascript
+
+
+
+
+
+
+
+
+
+
+  function Person(fname, lname) {
+      this.fname = fname;
+      this.lname = lname;
+      this.getFullName = function() {
+          return `${fname} ${lname}`
+      }
+  }
+
+  let person1 = new Person(firstName, lastName);
+  console.log(person1.getFullName());
+  ```
  
 1. Create another subdirectory: `\WIP\Ch01\jschallenges`
 

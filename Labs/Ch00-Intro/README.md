@@ -92,7 +92,7 @@ You will also create a directory for your work during class called WIP.
 
 1. Ensure that you have the Explorer open in the navigation bar.
 
-1. You should see the folder for this course listed. Within this folder you will see the `/Demos` and `/Labs` directories. The name of the folder is what is displayed in bold,  Ex. 155ModernWeb, 555IntermediateModernWeb, etc.
+1. You should see the folder for this course listed. Within this folder you will see the `/Demos` and `/Labs` directories. The name of the folder is what is displayed in bold,  Ex. `901NODEINTRO`, etc.
     
 1. Create the `WIP` folder to hold your working files
 
