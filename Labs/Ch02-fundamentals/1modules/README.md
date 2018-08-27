@@ -3,13 +3,15 @@
 ## Objectives:
 * Follow the steps below to create node programs using custom modules
 
-## Steps
+## Directory and files
 
 1. In your \WIP directory, create the directory structure `\WIP\Ch02\modules`
 
 1. Create a file called `main.js`
 
-## require a Single function:
+## Steps
+
+### require a Single function:
 
 1. In this file add this line:
     ```javascript
@@ -41,7 +43,7 @@
 
 1. Now try to run your main.js again. Do you get the expected output?
 
-##  require a class:
+###  require a class:
 
 1. In your main.js add this line:
     ```javascript
