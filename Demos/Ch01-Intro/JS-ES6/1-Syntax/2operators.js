@@ -14,7 +14,7 @@
 
         console.group('Plus symbol...');
         console.log('x = ' + x);
-        console.log('x+1 = ' + ++x);
+        console.log('x+1 = ' + (++x) );
         console.log(z + myString);
         console.groupEnd();
 
@@ -32,3 +32,12 @@
         console.log(lowerString == upperString);    
         console.groupEnd();
         
+        let aa = 1;
+        let bb = ++aa; // a = a+1  then it gets assigned
+        console.log('aa',aa);  
+        console.log('bb',bb);
+
+        let cc = aa++; // assign it, then a = a+1
+        console.log('cc',cc);
+        console.log('aa',aa);  
+    
