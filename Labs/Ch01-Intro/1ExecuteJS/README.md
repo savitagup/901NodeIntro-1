@@ -110,3 +110,20 @@
 1. Complete all challenges. 
 
 1. Mark your work as complete using the means specified for your class. Ask your instructor if they forgot to tell you. :)
+
+## Bonus
+
+1. Write a JavaScript function called first to get the first element of an array. Passing a second parameter 'n' will return the first 'n' elements of the array
+
+Test Data : 
+console.log(first([7, 9, 0, -2])); 
+console.log(first([],3));
+console.log(first([7, 9, 0, -2],3));
+console.log(first([7, 9, 0, -2],6));
+console.log(first([7, 9, 0, -2],-3));
+Expected Output : 
+7
+[] 
+[7, 9, 0] 
+[7, 9, 0, -2] 
+[] 
