@@ -72,6 +72,7 @@ If you need additional help, ask your instructor or fellow students.
 
 1. Examine your output to see if it matches the above desired output.
 
+
 ## Bonus #1
 
 1. If done before others, create another type of event called 'break'.
@@ -82,7 +83,7 @@ If you need additional help, ask your instructor or fellow students.
 
 1. use setInterval and Math.random to create a number 1 to 20 - when it is 11 - raise an event called `sighting`. 
 
-1. run the code and watch for the outout
+1. run the code and watch for the output
 
 1. when exit the program - using process - indicate how many time 11 was sighted.
 
