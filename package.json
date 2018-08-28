@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JudyLipinski/901NodeIntro/issues"
   },
-  "homepage": "https://github.com/JudyLipinski/901NodeIntro#readme"
+  "homepage": "https://github.com/JudyLipinski/901NodeIntro#readme",
+  "devDependencies": {
+    "eslint": "^5.4.0"
+  }
 }
