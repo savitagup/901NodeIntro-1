@@ -10,7 +10,7 @@ function printA(){
  let t1 = setTimeout(printA, 2000);
  
  // Now clear the timer
- setTimeout(()=> {clearTimeout(t1)}, 8000);
+ setTimeout(()=> {clearTimeout(t1);}, 8000);
  
  function printB(){
     console.log( "B");
