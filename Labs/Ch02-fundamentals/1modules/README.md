@@ -78,10 +78,65 @@
     ```
 
 1. Now create subtract and multiple functions and call those as well.
+
+###  Practice with a constructor functions & classes
+
+1. Create a module / file called constructor-band.js 
+    * which allows you to create a new band by passing in a name (string) and an array of band members (strings). 
+     
+
+    Scroll down for hint and to continue:
+
+    ```javascript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function Band(name, members) {
+            this.name = name;
+            this.members = members;
+        }
+    ```
+
+
+1. Add a prototype functions for memberCount to returns the number of members. Like this:
+
+    ```javascript
+        Band.prototype.memberCount = function() {
+            return this.members.length;
+        }
+    ```
+
+1. Add another prototype function for hasMember which uses Arrays.prototype.includes to see if the array contains the passed in string name. Check MDN if you need help: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+
+1. Create a call-band.js file which uses the bands.js module, create a band object similar to this:
+    ```javascript
+        const beatles = new Band('The Beatles', ['John', 'Paul', 'George', 'Ringo']);
+    ```
     
+1. Call each of the functions and log the output. 
+
+    Example for the first function:
+
+    ```javascript
+    console.log(`beatles member count`, beatles.memberCount());
+    ```
+
 1. Mark your work as complete and the work on the bonus
 
 ## Bonus
 
-1. Create a shape area calculator that has methods for calculating area of a circle given a radios, are a of a square given a side, and area of a triangle given base and height.
+1. Create a shape area calculator that has methods for calculating area of a circle given a radius, area of a square given a side, and area of a triangle given base and height.
 Require and use your calculator module.
+
+1. Rewrite the band module in class-band.js - and use ES6 class notation instead.

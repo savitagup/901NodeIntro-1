@@ -4,7 +4,7 @@ class Square {
     }
   
     area() {
-      return this.width * 2;
+      return this.width * this.width;
     }
 }
 
