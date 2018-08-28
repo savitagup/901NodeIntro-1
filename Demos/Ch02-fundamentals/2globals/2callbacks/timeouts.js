@@ -20,5 +20,4 @@ function printA(){
   // Now clear the timer
   setTimeout(()=> {clearTimeout(t2); console.log('cancelled timeout')}, 8000);
 
- console.log('window',window);
  

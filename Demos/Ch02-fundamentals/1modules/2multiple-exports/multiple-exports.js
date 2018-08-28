@@ -1,4 +1,4 @@
-let url = 'http://bands.com/api';
+const url = 'http://bands.com/api';
 
 function log(message) {
     console.log(message);

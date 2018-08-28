@@ -28,7 +28,7 @@
 
 1. READ: Notice how the Node `Module` class is trying to load the specified module. Node loads modules and caches them. Because of this, if in your code you use the same module more than once, you get the same instance that has been cached.
 
-1. NOTE: Here we are looking in the local file system for a module using "./filename.js"
+1. NOTE: Here we are looking in the local file system for a module using `./filename.js`
 
 1. In your working directory, create a file called add.js and add this code to it:
 

@@ -1,0 +1,19 @@
+{
+  "name": "901nodeintro",
+  "version": "1.0.0",
+  "description": "Intro to Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JudyLipinski/901NodeIntro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JudyLipinski/901NodeIntro/issues"
+  },
+  "homepage": "https://github.com/JudyLipinski/901NodeIntro#readme"
+}
