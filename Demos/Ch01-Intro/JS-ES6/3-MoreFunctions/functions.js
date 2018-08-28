@@ -1,8 +1,4 @@
-<html>
-    <head>
-		<title>Functions</title>
 
-        <script>
             const starters = ['Soup', 'Fois Gras', 'Smoked Salmon', 'Oysters'] ;
 
             for ( const dish of starters ) {
@@ -59,9 +55,4 @@
             console.log( multiplyBy5( 6 ) ) ; // 30
             const multiplyBy7 = makeMultiplier( 7 ) ;
             console.log( multiplyBy7( 3 ) ) ; // 21
-        </script>
-    </head>
-    <body>
-        <h1>Functions</h1>
-    </body>
-</html>
+      

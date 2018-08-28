@@ -1,8 +1,4 @@
-<html>
-    <head>
-		<title>Arrow Functions</title>
 
-        <script>
             const numbers = [1, 2, 10, 21] ;
 
             numbers.sort((a, b) => {
@@ -65,9 +61,3 @@
 
             console.log('Sum is ' + sum);
             // Produces: "Sum is 100"
-        </script>
-    </head>
-    <body>
-        <h1>Functions</h1>
-    </body>
-</html>
