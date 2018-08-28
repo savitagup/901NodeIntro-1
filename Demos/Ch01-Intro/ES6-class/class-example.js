@@ -9,3 +9,4 @@ class Square {
 }
 
 const newSquare = new Square(3);
+console.log(newSquare.area());
