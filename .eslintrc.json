@@ -12,7 +12,7 @@
     },
     "rules": {
         "indent": [
-            "error",
+            "0",
             "tab"
         ],
         "linebreak-style": [
