@@ -16,3 +16,7 @@
 
 ## Helpful Extensions
 * Run Code - by Jun Han
+* JSHint - feedback on JS
+* ESLint - feedback specified by config file
+Others:
+https://codeburst.io/top-javascript-vscode-extensions-for-faster-development-c687c39596f5 

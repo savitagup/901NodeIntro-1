@@ -7,16 +7,18 @@
 
 1. In your \WIP directory, create the directory structure `\WIP\Ch02\modules`
 
-1. Create a file called `main.js`
+1. Create a file called `main.js` to start your work.
 
 ## Steps
 
 ### require a Single function:
 
-1. In this file add this line:
+1. In the main.js file add this line:
     ```javascript
         const add = require('./add.js');
     ```
+
+    READ: The .js extension is optional.
 
 1. Open a VSCode terminal at this pont by right clicking on the file and choosing open at terminal.
 
