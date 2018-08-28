@@ -1,6 +1,6 @@
-# Chapter 2: Practice with NPM
+# Chapter 2: Practice with package.json and npm
 ## Objectives:
-* You will use NPM to obtain packages for a project
+* You will create a package.json and use npm to obtain packages for a project
 
 ## Steps
 
