@@ -1,5 +1,5 @@
 {
-  "name": "CommonJS-BrowserifyExample",
+  "name": "browserify-with-arr-union",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
