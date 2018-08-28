@@ -16,7 +16,7 @@
             "tab"
         ],
         "linebreak-style": [
-            "error",
+            "off",
             "windows"
         ],
         "quotes": [
@@ -24,9 +24,9 @@
             "double"
         ],
         "semi": [
-            "error",
+            "warn",
             "always"
         ],
-         "allow": ["warn", "error"] 
+        "no-console": "off"
     }
 }
