@@ -8,3 +8,10 @@
 
 1. Open `Ex02-ReadFilePromises\README.md` and follow the steps to work with files using promises.
 
+# Bonus 1: Ex03-Read-Parse
+# Bonus 2: 
+    Can you write code to read in the file run-on.txt and insert
+    line breaks to make it more readable?
+
+
+
