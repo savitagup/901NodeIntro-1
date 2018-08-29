@@ -1,7 +1,7 @@
 var fs = require("fs");
 
 console.log("Going to write into existing file");
-fs.writeFile('input.txt', 'Simply Easy Learning!',  function(err) {
+fs.writeFile('input.txt', 'Node is kinda neat!',  function(err) {
    if (err) {
       return console.error(err);
    }
