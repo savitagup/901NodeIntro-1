@@ -16,3 +16,5 @@ fs.writeFile('input.txt', 'Node is kinda neat!',  function(err) {
    });
 });
 
+console.log('End of program file');
+

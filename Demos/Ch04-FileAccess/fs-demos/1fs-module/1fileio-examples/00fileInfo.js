@@ -13,3 +13,5 @@ fs.stat('input.txt', function (err, stats) {
    console.log("isDirectory ? " + stats.isDirectory());    
 });
 
+
+console.log('End of program file');

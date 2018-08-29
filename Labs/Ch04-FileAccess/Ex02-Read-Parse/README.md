@@ -6,17 +6,15 @@ Read a file of temperatures for the week into your program and use a package to 
 
 ## Directory and files
 
-1. In your \WIP directory, create directories `\WIP\Ch04\read-weather`
+1. In your \WIP directory, create directory structure: `\WIP\Ch04\read-weather`
 
 1. In this directory, create a file called `weather.json`
-
-1. Create another file called `read-weather.js`
 
 1. Run `npm init --yes` to generate the package.json with default values.
 
 ## Steps
 
-1. In your weather.json file create an array of objects. One example object is:
+1. In your `weather.json` file create an array of objects. One example object is:
     ```javascript
     {"day":"Monday", "high":100, "low":90}
     ```

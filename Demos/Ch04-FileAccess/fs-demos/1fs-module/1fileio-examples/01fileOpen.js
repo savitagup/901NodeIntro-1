@@ -10,3 +10,4 @@ fs.open('input.txt', 'r+', function(err, fd) {
   console.log("File opened successfully!");     
 });
 
+console.log('End of program file');

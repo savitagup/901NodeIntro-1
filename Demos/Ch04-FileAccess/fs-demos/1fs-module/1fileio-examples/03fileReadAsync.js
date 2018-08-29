@@ -8,4 +8,4 @@ fs.readFile('input.txt', function (err, data) {
    console.log("Asynchronous read: " + data);
 });
 
-console.log("Program End");
+console.log('End of program file');

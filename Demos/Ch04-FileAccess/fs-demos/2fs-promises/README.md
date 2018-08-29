@@ -1,21 +1,9 @@
-# Chapter 4 Working with Files - Part 2 Promises
+# Chapter 4 Demo  Working with Files - with Promises
 
-## Directory and files
 
-1. In your \WIP directory, create directories `\WIP\Ch04\part2`
+## Overview : 
 
-1. In this directory, create a file called `promise-read.js`
-
-1. Create another file called `input.txt` with this text: 
-    ```
-    Hello world! Im read with promise-read.js
-    ```
-
-## Overview 
-
-* This differs from Part I in that you will now uses Promises instead of callbacks.
-
-* You will use Bluebird's PromisifyAll to modify the fs module to return promises
+* You will review the use of Bluebird's PromisifyAll to modify the fs module to return promises
 
 * You will use Bluebird's Promise.try() to wrap around a call to fs.readFileAsync and read the `./input.txt` file  
 

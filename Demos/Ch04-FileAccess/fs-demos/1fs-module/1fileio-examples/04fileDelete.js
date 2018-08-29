@@ -7,3 +7,5 @@ fs.unlink('delete-this.txt', function(err) {
    }
    console.log("File deleted successfully!");
 });
+
+console.log('End of program file');

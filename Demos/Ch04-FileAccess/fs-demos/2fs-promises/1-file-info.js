@@ -13,3 +13,5 @@ Promise.try(() => {
 	console.log(`isFile ? ${stats.isFile()}`);
 	console.log(`isDirectory ? ${stats.isDirectory()}`);
 });
+
+console.log('Program End');
