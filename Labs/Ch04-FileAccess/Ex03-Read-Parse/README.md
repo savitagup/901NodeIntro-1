@@ -37,4 +37,18 @@ Read a file of temperatures for the week into your program and use a package to 
 1. Look at the code in the demo: `\Demos\Ch04-FileAccess\fs-module\fileReadAsync.js`
 
 1. Use this approach to read in the data from weather.json.
-     require and ./weather.json
+    
+1. To turn the json string into an array of objects, we can use JSON.parse.
+
+    ```javascript
+    const weatherArray = JSON.parse(contents);
+    ```
+
+1. This is asynchronous, you can use Promises to indicate the "sequential" asynchrounous steps. We have seen using BlueBird but there is now also the ability to promisify functions within Node using a core module util.
+
+https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_promisify_original
+
+1. Now with an array of objects find the highest high and lowest low of the week. We have done this in a previous exercise, but now checkout using _lodash functions such as minBy
+
+https://lodash.com/docs/4.17.10#minBy
+
