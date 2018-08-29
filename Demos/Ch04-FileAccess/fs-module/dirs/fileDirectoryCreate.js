@@ -1,7 +1,9 @@
-var mkdirp = require('mkdirp');
+const mkdirp = require('mkdirp');
+const path = require('path');
+
 console.log("Going to create directory tmp/test");
 
-mkdirp('/tmp/test',function(err){
+mkdirp(path.join(__dirname,'/tmp/test'),function(err){
    if (err) {
       return console.error(err);
    }

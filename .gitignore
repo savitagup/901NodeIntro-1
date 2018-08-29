@@ -3,6 +3,7 @@ package-lock.json
 
 WIP/
 dist/
+tmp/
 
 # Logs
 logs
