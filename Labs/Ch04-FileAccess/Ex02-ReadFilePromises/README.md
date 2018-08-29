@@ -22,7 +22,7 @@
 
 1. Run `npm init` accepting the defaults to create a package.json
 
-1. Add bluebird as a production dependecy. `npm install -S`
+1. Add bluebird as a production dependecy. `npm install bluebird -S`
 
 1. Where can you find the documentation on Bluebird?
 
