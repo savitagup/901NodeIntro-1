@@ -1,4 +1,4 @@
-# Chapter 4 Working with Files - Part 2 Read & Parse
+# Chapter 4 Working with Files - Part 3 Read & Parse
 
 ## Overview
 
@@ -30,9 +30,7 @@ Read a file of temperatures for the week into your program and use a package to 
 
 1. This gets the data, but what are some short-comings of this approach?
 
-1. This is a synchronous approach.
-
-1. Imagine we have a lot of data, and we want to process it asynchrounously. This will block and wait. We can use the fs core module.
+1. This is a synchronous approach.  Imagine we have a lot of data, and we want to process it asynchronously, because our app needs to service other requests. This will block and wait. We can use the fs core module which has synchronous functions.
     
 1. Comment out your current code by highlighting it and using control + / in VSCode. this will comment out all lines of code. This acts as a toggle. if you do it again it will uncomment. Leave the code commented out and move to the next step.
 
@@ -40,4 +38,3 @@ Read a file of temperatures for the week into your program and use a package to 
 
 1. Use this approach to read in the data from weather.json.
      require and ./weather.json
-use an asynchrous call to read the file and to 
