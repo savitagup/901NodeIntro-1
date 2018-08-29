@@ -1,7 +1,8 @@
-var fs = require("fs");
+const fs = require("fs");
+const path = require('path');
 
 console.log("Going to read directory tmp");
-fs.readdir("tmp/",function(err, files){
+fs.readdir(path.join(__dirname,'/tmp/'),function(err, files){
    if (err) {
       return console.error(err);
    }
