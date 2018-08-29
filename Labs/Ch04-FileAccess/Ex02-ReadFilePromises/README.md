@@ -13,32 +13,30 @@
 
 ## Overview 
 
-* This differs from Part I in that you will now uses Promises instead of callbacks.
+* This differs from Part I in that you will now use Bluebird to work with Promises instead of callbacks.
 
-* You will use Bluebird's PromisifyAll to modify the fs module to return promises
 
-* You will use Bluebird's Promise.try() to wrap around a call to fs.readFileAsync and read the `./input.txt` file  
+##  Steps
 
-* Print the file contents to the terminal, if successful
+1. Create a directory structure `\WIP\Ch04\part2`
 
-* Print an error to the terminal if one occurs
+1. Run `npm init` accepting the defaults to create a package.json
 
-## Detailed Steps
+1. Add bluebird as a production dependecy. `npm install -S`
 
-1. Add bluebird as a dependecy. Where can you find the documentation?
+1. Where can you find the documentation on Bluebird?
 
-1. Notice the usage of `Promise.promisifyAll`.  This can be used to modify the fs module - it creates new functions that can be called that return promises - suffixed with Async.  This allows us to call `fs.readFileAsync` which returns a promise, instead of only having `fs.readFile` available. 
+1. Look for and read the description of how to use of `Promise.promisifyAll`.  
 
-1. Now you can structure your code as follows: 
+1. Now visit the demos at `\Demos\Ch04-FileAccess\fs-demos\2fs-promises`. Read each example and execute it. Examine the order of the console outputs.
+
+1. Now that you have seen these code examples, you will do similar work.  In your code `promise-read.js`, require bluebird and use it to promisifyAll of the fs module
 
     ```javascript
-    Promise.try(() => {
-        return fs.readFileAsync("./input.txt");
-    }).then((fileContents) => {
-        console.log(fileContents.toString());
-    }).catch((err) => {
-        console.error("An error occurred", err);
-    });
+    const Promise = require("bluebird");
+    const fs = Promise.promisifyAll(require("fs"));
     ```
 
-1. Use `npm install` to get the dependencies and then use the node command to run the saved `promise-read.js` file.
+1. Leverage the demos, and use a Promise.try to wrap promise calls to readFileAsync, then console.log the contents, and have a catch in case of errors which logs the error using console.error.
+
+1. Use the node command to run your file. You may be making several changes, it is best to open a terminal for this work.
