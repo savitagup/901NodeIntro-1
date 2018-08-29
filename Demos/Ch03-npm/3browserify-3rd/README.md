@@ -9,8 +9,9 @@
 
 1. Read the package.json file - what are the dependencies?
 
-1. To get the dependencies:
-    npm install
+1. To get the dependencies: `npm install`
+
+1. Open `package-lock.json`. Thsi file contains information about modules depending on other modules, and tracking the versions. Search this file (Control + F) and look for `readable-stream` what version(s) are beig used in this project?
 
 1. Find the scripts object in package.json.
 
