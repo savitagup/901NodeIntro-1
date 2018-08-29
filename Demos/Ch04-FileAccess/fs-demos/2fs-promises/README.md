@@ -3,9 +3,9 @@
 
 ## Overview : 
 
-* You will review the use of Bluebird's PromisifyAll to modify the fs module to return promises
+* You will review the use of Bluebird's PromisifyAll which creates a version of the fs module API to return promises
 
-* You will use Bluebird's Promise.try() to wrap around a call to fs.readFileAsync and read the `./input.txt` file  
+* You will review Bluebird's Promise.try() to wrap around a call to fs.readFileAsync and read the `./input.txt` file  
 
 * Print the file contents to the terminal, if successful
 
@@ -15,9 +15,9 @@
 
 1. Add bluebird as a dependecy. Where can you find the documentation?
 
-1. Notice the usage of `Promise.promisifyAll`.  This can be used to modify the fs module - it creates new functions that can be called that return promises - suffixed with Async.  This allows us to call `fs.readFileAsync` which returns a promise, instead of only having `fs.readFile` available. 
+1. Lookup the usage of `Promise.promisifyAll`.  This can be used to modify the fs module - it creates new functions that can be called that return promises - suffixed with Async.  This allows us to call `fs.readFileAsync` which returns a promise, instead of only having `fs.readFile` available. 
 
-1. Now you can structure your code as follows: 
+1. Code can be structured as follows: 
 
     ```javascript
     Promise.try(() => {
@@ -29,4 +29,6 @@
     });
     ```
 
-1. Use `npm install` to get the dependencies and then use the node command to run the saved `promise-read.js` file.
+1. Use `npm install` to get the dependency.
+
+1. Read through each file one at a time, reading for understanding and then executing, making note of any changes to the system - and the order of console.log statements
