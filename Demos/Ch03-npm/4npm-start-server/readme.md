@@ -36,9 +36,8 @@
 1. The console will display two URLs.
 You can ctrl-click these in order to open in the browser:
 
-    http://localhost:3000/bands
-
     http://localhost:3000/
+
 
     ### Explore the files 
 
