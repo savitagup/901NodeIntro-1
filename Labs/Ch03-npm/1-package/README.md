@@ -1,20 +1,22 @@
-# Chapter 2: Practice with package.json and npm
+# Chapter 3: Practice with package.json and npm
 ## Objectives:
 * You will create a package.json and use npm to obtain packages for a project
 
 ## Steps
 
-1. In your \WIP directory, create the directory structure \WIP\Ch03\1npm-local
+1. In your \WIP directory, create the directory structure \WIP\Ch03\npm-with-package
 
 1. Open a command prompt at that location (VSCode integrated terminal) and issue this command:
 `npm init`
 
-1. Go through the wizard to create a package.json. Call the project `timeexample` and accept given defaults. You can supply whatever info that you like. This is more for you to practice and see the outcome of the wizard.
+1. Go through the wizard to create a package.json. Call the project `timeexample`. Notice, and accept the other default values. You can supply whatever info that you like. This is more for you to practice and see the outcome of the wizard.
 
-1. We want to get the package called Moment, and to add it to the newly created package.json.
+1. Once complete - view the geerated package.json.
+
+1. We want to get the package called `moment`, and to add it to the newly created package.json.
 
 1. Execute this from the command line:
-npm install moment --save
+`npm install moment --save`
 
 1. Review the updated package.json. Can you see the changes? 
 
