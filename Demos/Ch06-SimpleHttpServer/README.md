@@ -2,7 +2,7 @@
 
 1. review the code in 1server.js
 
-1. start server:  `node server`
+1. start server:  `node 1server`
 
 1. Visit: http://localhost:3000
 
