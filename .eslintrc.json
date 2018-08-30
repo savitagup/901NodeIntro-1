@@ -27,10 +27,13 @@
             "double"
         ],
         "semi": [
-            "warn",
+            "off",
             "always"
         ],
         "no-console": "off",
+        "no-undef": "off",
+        "no-unexpected-multiline": "off",
+        "no-unused-vars": "off",
         "no-mixed-spaces-and-tabs":"off"
     }
 }

@@ -89,7 +89,7 @@ module.exports = function({db}) {
 	router.post("/:studentId/update", (req, res) => {
 		return Promise.try(() => {
 			return createStudentValidator().run(req.body);
-		}).then((results) => {;
+		}).then((results) => {
 			return db("students").update({
 				nameFirst: req.body.nameFirst,
 				nameLast: req.body.nameLast,
