@@ -1,5 +1,3 @@
-'use strict';
-
 	/* 500 is an internal server error; this category includes any kind
 		   of unexpected error (ie. a bug). It should be reported to the
 		   error reporter, which will then likely crash the process and let

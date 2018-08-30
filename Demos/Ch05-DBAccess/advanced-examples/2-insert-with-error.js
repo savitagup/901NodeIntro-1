@@ -4,7 +4,7 @@ const Promise = require("bluebird");
 const knex = require("knex");
 let db = knex(require("./knexfile"));
 
-return Promise.try(() => {
+Promise.try(() => {
 	/* In this example, there *will* be an intentional failure! The result is
 	   that the "Chicago" location is never added to the database. */
 
@@ -37,7 +37,7 @@ return Promise.try(() => {
 		});
 	});
 }).catch((err) => {
-	console.error("The insert failed!");
+	console.error("The insert failed! " + err);
 }).finally(() => {
 	return Promise.try(() => {
 		return Promise.all([
