@@ -2,25 +2,31 @@
 ## Objectives:
 * This exercise will create a basic server using Express.
 * A router will be used to set a response for /
-* Check the Demos or solution if you need additional hints
+* Check the Slides or Demos if you need additional hints
+
+## Dir/File setup steps
+
+1. In your \WIP directory, create the directory structure `WIP\Ch07\express-server`
+
+1. Create a file called `server.js`
+
+1. Use `npm init --yes` to create a package.json
+
+1. Use `npm install -S express` to install the express package and add it to the package.json dependencies
+
+1. Create a `config.json` file, containing a `port` property with the numeric value 3000
 
 ## Steps
-1. In your WIP directory, create this structure:
-`WIP\Ch07\express-server`
 
-1. In this directory, create a new Node.js project: `npm init -y`
+1. In `server.js` require the `express` library as a `const` named `express`
 
-1. Install Express: `npm install --save express`
+1. Create a new variable named  `app` by calling `express()`  [this is the Express application]
 
-1. Create a `config.json` file, containing a `port` key with the value `3000`
+1. Require the `config.json` file as a `const` named `config`. This loads the file with the config information. We can do this as a straight require as it is during startup and is not intensive.
 
-1. Create a `server.js` file
-    - Require the `express` library as a `const` named `express`
-    - Call `express()`, and store the result in a new variable named `app` [this is the Express application]
-    - Require the `config.json` file as a `const` named `config`
-    - Call the `app.listen()` method, and pass in as arguments:
-        - The port number, coming from `config.port`
-        - A callback function, with no input, that uses `console.log` to display a message that you're listening on the configured port
+1. Call the `app.listen()` method, and pass in as arguments:
+    * The port number 
+    * A callback function, with no input, that uses `console.log` to display a message that you're listening on the configured port
 
 1. Create a directory and file:  `routes/index.js` file
 

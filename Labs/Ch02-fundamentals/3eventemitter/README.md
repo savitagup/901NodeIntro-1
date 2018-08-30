@@ -7,7 +7,6 @@
 
 ## Dir/File setup
 
-
 1. In your \WIP directory, create the directory structure \WIP\Ch02\events
 
 1. Create a file called `events.js`
