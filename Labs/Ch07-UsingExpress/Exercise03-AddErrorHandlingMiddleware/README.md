@@ -109,7 +109,7 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 				1. `errorMessage`, containing the string "Internal Server Error"
 				2. `stackTrace`, containing the variable of the same name
 
-1. Back in server.js add this line of code: 
+1. Back in `server.js` add this line of code: 
 
 	`app.use(require("./middleware/error-handler")(state));`
 
@@ -118,10 +118,10 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 1. Modify `routes/index.js`:
 
 	* remove this line of code: `const express = require("express");`
-	* Add this line of code: `let router = require("express-promise-router")();`
-	* 
+	* Change this line of code: `let router = require("express-promise-router")();`
+	
 ## Run the application
-1. Install Node dependencies `npm install`
+1. Install Node dependencies `npm install` if running solution.
 1. Run the server `nodemon server.js`
 1. Point a browser at the URL `http://localhost:3000`
 1. You should see the output from the server. If not fix any problems

@@ -1,4 +1,4 @@
-'use strict';
+
 
 var TableHelper = function (settings) {
     this.data = settings.data;

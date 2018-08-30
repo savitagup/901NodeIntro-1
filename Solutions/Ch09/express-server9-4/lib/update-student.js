@@ -1,4 +1,4 @@
-'use strict';
+
 
 const Promise = require("bluebird");
 const simpleArrayDiff = require("simple-array-diff");
