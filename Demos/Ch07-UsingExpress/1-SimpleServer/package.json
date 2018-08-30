@@ -1,7 +1,7 @@
 {
   "name": "ch07-using-express",
   "version": "1.0.0",
-  "description": "demos i creating express apps",
+  "description": "demos creating express apps",
   "main": "simpleServer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
