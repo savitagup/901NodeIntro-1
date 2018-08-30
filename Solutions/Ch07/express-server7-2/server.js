@@ -1,4 +1,4 @@
-'use strict';
+
 
 const express = require("express");
 const path = require("path");
@@ -15,5 +15,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(require("./routes/index.js"));
 
 app.listen(config.port, () => {
-	console.log(`Listening on port ${config.port}...`);
+	console.log(`Listening on http://localhost:${config.port}...`);
 });

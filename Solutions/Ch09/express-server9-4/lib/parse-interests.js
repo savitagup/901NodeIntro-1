@@ -1,4 +1,4 @@
-'use strict';
+
 
 module.exports = function parseInterests(interests) {
 	if (interests == null) {

@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git@git.cryto.net:joepie91/student-management-example.git"
   },
-  "keywords": ["example"],
+  "keywords": [
+    "example"
+  ],
   "author": "Sven Slootweg",
   "license": "WTFPL",
   "dependencies": {

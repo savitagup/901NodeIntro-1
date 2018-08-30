@@ -31,7 +31,14 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 	```javascript
 	app.set("views", path.join(__dirname, "views"));
 	app.set("view engine", "pug");
+
+	
 	```
+
+1. Add a reference to the public views folder:
+
+	`app.use(express.static(path.join(__dirname, "public")));`
+
 
 ## Update route to use views
 
@@ -94,39 +101,45 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 
 1. Layout.pug will contain the basic html, head and body elements: 	
 	```
-	doctype html
-	html
-		head
-			meta(charset='utf-8')
-			meta(http-equiv='X-UA-Compatible', content='IE=edge')
-			meta(name='viewport', content='width=device-width, initial-scale=1')
-			title Class Management App
+		doctype html
+		html
+			head
+				meta(charset='utf-8')
+				meta(http-equiv='X-UA-Compatible', content='IE=edge')
+				meta(name='viewport', content='width=device-width, initial-scale=1')
+				title Class Management App
 
-			link(rel='stylesheet', href='/css/bootstrap.min.css')
-			link(rel='stylesheet', href='/css/custom.css')
-		body
-			nav.navbar.navbar-default.navbar-static-top
-				.container-fluid
-					.navbar-header
-						button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						a.navbar-brand(href="/") Class Management App
-					#navbar.navbar-collapse.collapse
-						ul.nav.navbar-nav.navbar-right
-							li
-								a(href="/") Students
-							li
-								a(href="/class") Tools
-							li
-								a(href="/about") About
+				link(rel='stylesheet', href='/css/bootstrap.min.css')
+				link(rel='stylesheet', href='/css/custom.css')
+			body
+				nav.navbar.navbar-default.navbar-static-top
+					.container-fluid
+						.navbar-header
+							button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							a.navbar-brand(href="/") Class Management App
+						#navbar.navbar-collapse.collapse
+							ul.nav.navbar-nav.navbar-right
+								li
+									a(href="/") Students
+								li
+									a(href="/class") Tools
+								li
+									a(href="/about") About
 
-			.container.content
-				block content
+				.container.content
+					block content
 
-			include foot
+				include foot
+
+				script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+				script(src='/js/bootstrap.min.js')
+				script(src='/js/script.js')
+
+
 	```
 
 1. Notice that use of include foot? You can create foot.pug with this information:

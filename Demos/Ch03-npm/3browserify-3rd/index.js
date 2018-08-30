@@ -1,4 +1,4 @@
-'use strict';
+
 
 var arrUnion = require("arr-union");
 var arrayToText = require("./array-to-text");

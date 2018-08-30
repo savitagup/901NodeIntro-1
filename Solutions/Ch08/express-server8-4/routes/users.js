@@ -1,4 +1,4 @@
-'use strict';
+
 
 const Promise = require("bluebird");
 const scryptForHumans = require("scrypt-for-humans");

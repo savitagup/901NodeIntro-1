@@ -1,4 +1,4 @@
-'use strict';
+
 
 const Promise = require("bluebird");
 const knex = require("knex");
@@ -12,7 +12,7 @@ let db = knex(require("./knexfile"));
 	   There are no failures in this example, though.
 */
 
-return Promise.try(() => {
+Promise.try(() => {
 	return [{
 		name: "New York",
 		items: [{

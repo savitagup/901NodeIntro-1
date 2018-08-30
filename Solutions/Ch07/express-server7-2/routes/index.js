@@ -1,5 +1,3 @@
-'use strict';
-
 const express = require("express");
 const moment = require("moment");
 
@@ -37,5 +35,6 @@ router.get("/class", (req, res) => {
 router.get("/about", (req, res) => {
 	res.render("about");
 });
+
 
 module.exports = router;
