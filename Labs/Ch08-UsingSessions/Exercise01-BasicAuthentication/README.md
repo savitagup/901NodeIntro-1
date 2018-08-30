@@ -1,18 +1,57 @@
 # Chapter 8: Exercise 1: Basic Authentication
-## New Concepts
-* body-parser usage
+
+Continue working in your `WIP\Ch07\express-server` directory. If you did not complete the last exercise, you can copy the solution from the last exercise in the solutions directory to be your starting point.
+
+
+## Objectives:
+* Use body-parser
 * Sessions + express-session usage
-* First use of Promises + promisifying
 * Using a custom regular middleware
 * Custom error types
 * Access control (require login before allowing access to certain routes)
 * Because of access control: specifying route-level middleware (requireLogin) before the route handler
 * Conditional error logic; expose and log certain information under certain circumstances, but not under others
 
+
+## New Packages
+
+	* Use npm install -S to get `body-parser` and `express-session`
+
 ## Steps:
-1. Navigate to the directory Labs/Ch08-UsingSessions/Exercise06-BasicAuthentication/__End__/code
-1. Review package.json dependencies which include : `body-parser`, `express-session`
-1. Open `server.js`, and note how the `body-parser` and `express-session` modules are required and set up on the application using `router.use`.
+
+1. Open `server.js`, and at the top with the other require statetements - include body-parser and express-session. 
+
+1. Before the statement of:  
+
+
+	add this new code:
+	
+	```javascript
+		router.use(bodyParser.urlencoded({extended: true}));
+
+		router.use(expressSession({
+			secret: config.sessions.secret,
+			resave: false,
+			saveUninitialized: false
+		}));
+
+		router.use(require("./middleware/sessions-promises"));
+
+		router.use(require("./routes/index.js"));
+		router.use(require("./routes/users.js"));
+
+		// catch 404 and forward to error handler
+		router.use(function(req, res, next) {
+			let err = new Error('Oh no! the page cannot be found');
+			err.status = 404;
+		// throw new customErrors.NotFoundError("404 Resource Not Found");
+			req.timestamp = new Date();
+			next(err);
+		});
+	```
+	
+	 `router.use`.
+
 1. `bluebird`.
 	- Note how a new file is created at `middleware/sessions-promises.js`, and it specifies a middleware that adds promisified session methods on every request object.
 	- Note how in server.js, the new `sessions-promises` module is required, and passed into `router.use` right after the initialization of the express-session middleware.

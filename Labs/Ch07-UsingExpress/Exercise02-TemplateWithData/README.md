@@ -31,7 +31,14 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 	```javascript
 	app.set("views", path.join(__dirname, "views"));
 	app.set("view engine", "pug");
+
+	
 	```
+
+1. Add a reference to the public views folder:
+
+	`app.use(express.static(path.join(__dirname, "public")));`
+
 
 ## Update route to use views
 
