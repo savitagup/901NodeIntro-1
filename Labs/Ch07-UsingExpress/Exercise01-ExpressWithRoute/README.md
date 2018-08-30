@@ -44,8 +44,9 @@
 
 
 1. Call the `router.get()` method, passing in as the arguments:
-        - The string "/" - this is the path on which the new route should be created
-        - A callback (accepting a `req` and `res` argument), that specifies the logic to execute for the route
+
+    * The string "/" - this is the path on which the new route should be created
+    * A callback (accepting a `req` and `res` argument), that specifies the logic to execute for the route
 
     ```javascript
         router.get("/", (req, res) => {
@@ -59,7 +60,7 @@
     module.exports = router;
     ```
 
-1. In server.js require the `./routes/index` module, and pass it into a call to `app.use()`
+1. In server.js require the `./routes/index` module, and pass it into a call to `app.use()` - you can do this in one line of code.
 
 1. Run the server `nodemon server.js`
 

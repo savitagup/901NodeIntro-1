@@ -5,8 +5,8 @@ const port = 3000;
 let router = express.Router();
 
 router.get("/", (request, response) => {  
-  response.send('Hello from Express!')
-})
+  response.send('Hello from Express router!')
+});
 
 app.use(router);
 
@@ -15,6 +15,6 @@ app.listen(port, (err) => {
     return console.log('something bad happened', err)
   }
 
-  console.log(`server is listening on ${port}`)
+	console.log(`Listening on port http://localhost:${port} ...`);
 })
 
