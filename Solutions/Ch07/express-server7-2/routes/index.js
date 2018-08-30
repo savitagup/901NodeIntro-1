@@ -3,7 +3,7 @@
 const express = require("express");
 const moment = require("moment");
 
-let students = [{
+let studentArray = [{
 	nameFirst: "Devin",
 	nameLast: "Durgan",
 	email: "Devin.Durgan@gmail.com",
@@ -24,13 +24,13 @@ let router = express.Router();
 
 router.get("/", (req, res) => {
 	res.render("index", {
-		students: students
+		students: studentArray
 	});
 });
 
 router.get("/class", (req, res) => {
 	res.render("class", {
-		students: students
+		students: studentArray
 	});
 });
 

@@ -67,3 +67,21 @@
 1. Point a browser at the URL `http://localhost:3000`
 
 1. You should see the output from the server. If not fix any problems. And refresh the browser.
+
+1. Add another route in `routes/index.js` for /about.
+
+    ```javascript
+    router.get("/about", (req, res) => {
+        res.send("Hello world! From about page");
+    });
+    ```
+
+1. You should now be able to hit this route in the browser at `http://localhost:3000/about`  Test that you can see it.
+
+1. Add one more route for /class that says `welcome to the class page`.
+
+1. Mark your work as complete.
+
+## Bonus
+
+1. Add a weather page and display weather data from randomly generated high and low values for the week.

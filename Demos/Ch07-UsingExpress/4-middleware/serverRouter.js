@@ -1,9 +1,5 @@
-'use strict';
-
 const express = require("express");
 const path = require("path");
-
-const config = require("./config.json");
 
 let app = express();
 
@@ -22,6 +18,7 @@ app.use(function (req, res, next) {
 app.use(require("./routes/index.js"));
   
 
+let config = {port: 3007};
 app.listen(config.port, () => {
-    console.log(`Listening on port ${config.port}...`);
+	console.log(`Listening on port http://localhost:${config.port}...`);
 });

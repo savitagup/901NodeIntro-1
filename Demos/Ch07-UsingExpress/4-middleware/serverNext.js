@@ -3,8 +3,6 @@
 const express = require("express");
 const path = require("path");
 
-const config = require("./config.json");
-
 let app = express();
 
 app.set("views", path.join(__dirname, "views"));
@@ -23,6 +21,7 @@ app.use(function (req, res, next) {
     res.send(responseText);
 });
 
+let config = {port: 3006};
 app.listen(config.port, () => {
-    console.log(`Listening on port ${config.port}...`);
+	console.log(`Listening on port http://localhost:${config.port}...`);
 });

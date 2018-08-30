@@ -20,7 +20,8 @@ app.get('/', (request, response) => {
   })
 })
 
-app.listen(3002, () => {
-	console.log(`Listening on port 3002...`);
+let config = {port: 3005};
+app.listen(config.port, () => {
+	console.log(`Listening on port http://localhost:${config.port}...`);
 });
 

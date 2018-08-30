@@ -1,32 +1,47 @@
 # Chapter 7 Exercise 2: Templating With Data
 ## Objectives:
 * Install Pug and use Pug to render views.
-* Pass data (locals) to rendered templates
+* Setup and pass data (locals) to rendered templates
 
-## Steps
-1. Continue working in your `WIP\Ch07\express-server` directory. If you did not complete the last exercise, you can copy the solution from the solutions directory to start.
+
+Continue working in your `WIP\Ch07\express-server` directory. If you did not complete the last exercise, you can copy the solution from the solutions directory to start.
+
+## New Packages
+
+1. Install Moment.js: `npm install --save moment`
 
 1. Install Pug with `npm install --save pug`
 
-1. Edit `server.js`
-    - Use require to define a path
-    - Use the `app.set()` method with the following arguments: [app.set is for configuring Express options]
-	    - The string "views", which indicates the setting to configure
-	    - The result of calling the `path.join()` method with the following arguments: [this combines two or more path segments into a single path]
-		    - `__dirname`, which is a special variable, that contains the path of the folder that the script it's used in exists in - so, in this case, the folder that contains `server.js`
-		    - The string "views", which is the name of the folder where we're storing the view
-    - Call the `app.set()` method to set the view engine to pug
-1. Open the index.js routing file for editing
-    - Change the route to`res.render` instead of calling `res.send`
-	- Pass the string "index", which is the filename (without extension) of the view that we want to render
-## Steps to add template data:
-1. Install Moment.js: `npm install --save moment`
-// Create class
-1. Edit the file routes/index.js
-    - Require the `moment` library as a `const` named `moment`
-    - Define the following data as sample data:
+## Directories and files
+
+1. Copy the public folder from this directory to your working directory
+
+
+## Steps
+
+1. Open for editing: `server.js`
+
+1. Use require to define a path
+
+	`const path = require("path");`
+
+
+1. Use the `app.set()` to configure Express options for views and view engine.
+
+	```javascript
+	app.set("views", path.join(__dirname, "views"));
+	app.set("view engine", "pug");
+	```
+
+## Update route to use views
+
+1. Open the `routes/index.js` routing file for editing 
+
+1. Require the `moment` library as a `const` named `moment`
+
+1. Define the following array of objects for students. 
     ```javascript
-		let students = [{
+		let studentArray = [{
 			nameFirst: "Devin",
 			nameLast: "Durgan",
 			email: "Devin.Durgan@gmail.com",
@@ -43,17 +58,42 @@
 			hireDate: moment("08/29/2015", "MM/DD/YYYY")
 		}];
     ```
-1. Also add to routes/index.js
-     - Modify the `res.render()` call in the `/` route, to pass in a second argument - an object that contains the `students` variable as the `students` property [these are the locals passed to the template]
-     - Create a new route for the "/class" path that renders the "class" template, passing in a similar object containing the `students`
-     - Create a new route for the "/about" path that renders the "about" template
+
+1. Change the route for (/) to render an index view that you will create in a future section, and pass the array of students.
+
+	```javascript
+		router.get("/", (req, res) => {
+			res.render("index", {
+				students: studentArray
+			});
+		});
+	```
+
+1. Create a new route for the "/class" path that renders the "class" template, passing in a similar object containing the `studentArray`
+
+
+	```javascript
+		router.get("/class", (req, res) => {
+			res.render("class", {
+				students: studentArray
+			});
+		});
+	```
+
+1. Create a new route for the "/about" path that renders an "about" template
+	```javascript
+	router.get("/about", (req, res) => {
+		res.render("about");
+	});
+	```
 
 ## Template creation steps:
-1. Create “views” directory
+1. Create a `views` directory at the same level as `server.js`
+
 1. In the views directory make new files “layout.pug” and “index.pug”
-1. Add code to layout and index files to render html pages
-1. Layout.pug will contain the basic html, head and body elements and information
-	```pug
+
+1. Layout.pug will contain the basic html, head and body elements: 	
+	```
 	doctype html
 	html
 		head
@@ -100,7 +140,8 @@
 					a(class="disabled") &copy; 2017 Karmoxie
 	```
 
-1. Index.pug (and other files) extend layout in order to replicate layout for each page
+1. Create index.pug - it (and other files) extend layout in order to replicate layout for each page. Notice how index will use the passed in student data.
+
 	```pug
 	extends layout
 
@@ -130,7 +171,8 @@
 
     	.col-md-2
 	```
-1. Create class view
+
+1. Create class.pug
 	```pug
 	extends layout
 
@@ -181,26 +223,29 @@
     			}
 
 	```
-1. Create about view
+1. Create about.pug 
+
 	```pug
-	extends layout
+		extends layout
 
-    block content
-    	header.page-header
-    		h1 About
+		block content
+			header.page-header
+				h1 About
 
-    		h2 Student Manager Application
-    	.about
-    		strong Student Manager Application
-    		p This is a demo application used in the Intro to Node Development course
-    		p
-    			| For more information, please contact
-    			a(href='mailto:judy@karmoxie.com') Judy Lipinski
-    			| from
-    			a(href='http://www.karmoxie.com') Karmoxie Consulting
+				h2 Student Manager Application
+			.about
+				strong Student Manager Application
+				p This is a demo application used in the Intro to Node Development course
+				p
+					| For more information, please contact
+					a(href='mailto:judy@karmoxie.com') Judy Lipinski
+					| from
+					a(href='http://www.karmoxie.com') Karmoxie Consulting
 	```
+
 ## Run the application
-1. Install Node dependencies `npm install`
+1. If running solution, install Node dependencies `npm install`
 1. Run the server `nodemon server.js`
 1. Point a browser at the URL `http://localhost:3000`
-1. You should see the output from the server. If not fix any problems
+1. Click the pages.
+1. Fix any problems
