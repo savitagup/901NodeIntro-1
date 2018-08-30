@@ -1,9 +1,5 @@
-
-
 const express = require("express");
 const path = require("path");
-
-const config = require("./config.json");
 
 let app = express();
 
@@ -13,15 +9,16 @@ app.set("view engine", "pug");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(function (req, res, next) {
-    console.log('Time: %d', Date.now());
+    req.message = 'In middleware: line 16<br />';
+   
     next();
 });
 
-// requests will never reach this route
-app.get('/', function (req, res) {
-    res.send('Welcome');
-});
+// refer to router
+app.use(require("./routes/index.js"));
+  
 
+let config = {port: 3007};
 app.listen(config.port, () => {
-	console.log(`Listening on port http://localhost:${config.port}...`);
+	console.log(`Listening on port http://localhost:${config.port}`);
 });

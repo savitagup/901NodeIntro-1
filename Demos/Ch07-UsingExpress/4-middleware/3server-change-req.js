@@ -23,5 +23,5 @@ app.use(function (req, res, next) {
 
 let config = {port: 3006};
 app.listen(config.port, () => {
-	console.log(`Listening on port http://localhost:${config.port}...`);
+	console.log(`Listening on port http://localhost:${config.port}`);
 });

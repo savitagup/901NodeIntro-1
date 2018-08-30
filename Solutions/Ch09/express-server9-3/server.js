@@ -99,5 +99,5 @@ app.use((err, req, res, next) => {
 app.use(require("./middleware/error-handler")(state));
 
 app.listen(config.port, () => {
-	console.log(`Listening on port ${config.port}...`);
+	console.log(`Listening on port ${config.port}`);
 });
