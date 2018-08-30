@@ -4,7 +4,7 @@
 * Setup and pass data (locals) to rendered templates
 
 
-Continue working in your `WIP\Ch07\express-server` directory. If you did not complete the last exercise, you can copy the solution from the solutions directory to start.
+Continue working in your `WIP\Ch07\express-server` directory. If you did not complete the last exercise, you can copy the solution from the last exercise in the solutions directory to be your starting point.
 
 ## New Packages
 

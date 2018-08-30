@@ -4,7 +4,7 @@ const Promise = require("bluebird");
 const knex = require("knex");
 let db = knex(require("./knexfile"));
 
-return Promise.try(() => {
+Promise.try(() => {
 	return db("people").delete();
 }).then(() => {
 	console.log("Deleted everybody!");
