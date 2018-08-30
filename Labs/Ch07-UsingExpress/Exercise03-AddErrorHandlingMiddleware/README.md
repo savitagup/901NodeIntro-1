@@ -118,10 +118,29 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 1. Modify `routes/index.js`:
 
 	* remove this line of code: `const express = require("express");`
-	* Change this line of code: `let router = require("express-promise-router")();`
+	* Change this line of code: 
+	
+		`let router = express.Router();`
+
+		to this
+
+		`let router = require("express-promise-router")();`
+
+1. Add a file to views called error.pug with these contents:
+
+	```
+	extends layout
+
+	block content
+		h1= errorMessage
+
+		if stackTrace
+			pre #{stackTrace}
+
+	```
 	
 ## Run the application
 1. Install Node dependencies `npm install` if running solution.
 1. Run the server `nodemon server.js`
 1. Point a browser at the URL `http://localhost:3000`
-1. You should see the output from the server. If not fix any problems
+1. You should see the pages still working. If not fix any problems
