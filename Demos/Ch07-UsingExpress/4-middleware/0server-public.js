@@ -1,18 +1,15 @@
 const express = require("express");
 const path = require("path");
-const config = {port: 3745} ;
+const config = {port: 3740} 
 
 let app = express();
 
-app.use(function (req, res, next) {
-    req.message = 'In middleware: line 16<br />';
-   
-    next();
+app.use(express.static(path.join(__dirname, "public")));
+
+app.get('/', function (req, res) {
+    res.send('Welcome');
 });
 
-// refer to router
-app.use(require("./routes/index.js"));
-  
 app.listen(config.port, () => {
 	console.log(`Listening on port http://localhost:${config.port}`);
 });

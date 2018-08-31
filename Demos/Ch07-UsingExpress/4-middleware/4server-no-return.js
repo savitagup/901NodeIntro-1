@@ -4,14 +4,13 @@ const config = {port: 3744}
 
 let app = express();
 
-app.use(express.static(path.join(__dirname, "public")));
 
 app.use(function (req, res, next) {
     console.log('Time: %d', Date.now());
-    next();
-});
+    
+});  
 
-// this middleware will not allow the request to go beyond it
+// this middleware hangs the server, as next is not called
 app.use(function(req, res, next) {
     res.send('Hello World');
 });
