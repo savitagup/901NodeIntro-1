@@ -2,10 +2,14 @@
 
 const express = require("express");
 const path = require("path");
+
+const favicon = require('serve-favicon');
 const bodyParser = require("body-parser");
 const expressPromiseRouter = require("express-promise-router");
 const expressSession = require("express-session");
 const unhandledError = require("unhandled-error");
+
+
 
 const config = require("./config.json");
 
@@ -13,7 +17,7 @@ let errorReporter = unhandledError((err) => {
 	/* This should eventually be hooked into some sort of error reporting
 	   mechanism. */
 	console.error("UNHANDLED ERROR:", err.stack);
-});
+}, {"doNotCrash":true});
 
 /* The 'state' object is an object that we pass to everything that needs some
    sort of stateful dependency; all of the stateful dependencies are initialized
@@ -25,6 +29,9 @@ let state = {
 }
 
 let app = express();
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");

@@ -34,6 +34,7 @@ module.exports = function({errorReporter}) {
 			   if we're running in production (so that the service manager can log
 		       them, just in case we need them there). */
 			console.error(err.stack);
+			console.error(`request is ${req.url}`)
 		}
 
 		if (statusCode === 500) {

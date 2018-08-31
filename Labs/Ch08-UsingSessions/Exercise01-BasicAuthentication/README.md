@@ -15,6 +15,21 @@ You will be viewing an updated project based on our previous projects which demo
 Please follow the steps while viewing the project at:
 `\901NodeIntro\Solutions\Ch08\express-server8-1`
 
+
+## Run the application
+1. Install dependencies `npm install`
+
+1. Note the security warnings. Follow the instructions to run `npm audit`.
+
+	Which package had a vulnerability?
+
+1. Run the command as instructed to fix the issue.
+
+1. Run the server `node server.js`
+
+1. Point a browser at the URL `http://localhost:3000`
+
+
 ## Steps:
 
 1. Open `server.js`, and note the new require statetements - bluebird, body-parser and express-session. 
@@ -72,8 +87,3 @@ new code has been added to configure a session
  	- Error reporting is changed to only happen when a bug occurs, but not for other kinds of errors.
 
 
-
-## Run the application
-1. Install dependencies `npm install`
-1. Run the server `nodemon server.js`
-1. Point a browser at the URL `http://localhost:3000`
