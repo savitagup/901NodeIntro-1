@@ -36,9 +36,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 1. Open 1server-logtime.js. Notice the port it will start on.
 
-1. Note the middleware on line 9. This will run for EVERY reuest as it is not bound to any path.
-
-1. Note the use of next() on line 11 - what does this do?
+1. Note how the request is being changed form one middleware to the next.
 
 1. From the terminal type node 1 then hit tab to autocomplete to node 1server-logtime.js. Hit return to start the server, control click to open the browser.
 
