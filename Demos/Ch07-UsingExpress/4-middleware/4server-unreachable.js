@@ -1,7 +1,6 @@
-
-
 const express = require("express");
 const path = require("path");
+const config = {port: 3744} 
 
 let app = express();
 
@@ -23,8 +22,6 @@ app.get('/', function (req, res) {
 });
 
 
-
-let config = {port: 3006};
 app.listen(config.port, () => {
 	console.log(`Listening on port http://localhost:${config.port}`);
 });
