@@ -5,7 +5,7 @@ const config = {port: 3745} ;
 let app = express();
 
 app.use(function (req, res, next) {
-    req.message = 'In middleware: line 16<br />';
+    req.message = 'I was added by middleware in app.js<br/>';
    
     next();
 });

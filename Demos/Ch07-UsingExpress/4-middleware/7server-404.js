@@ -1,12 +1,8 @@
 const express = require("express");
-const favicon = require('serve-favicon');
 const path = require('path');
-const lowercasePaths = require("express-lowercase-paths")
-const config = {port: 3746} ;
+const config = {port: 3747} ;
 
 let app = express();
-
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.use((req, res, next)=> {
 	const now = new Date().toString();
@@ -15,13 +11,12 @@ app.use((req, res, next)=> {
 
 })
 
-app.use(lowercasePaths());
-
 app.get("/", (req, res) => {
 	res.send(`
-		Hello. Review the readme and the code to see examples of middleware
+		Main page
 	`);
 });
+
 
 app.get("/capitals", (req, res) => {
 	res.send(`
@@ -29,8 +24,9 @@ app.get("/capitals", (req, res) => {
 	`);
 });
 
-app.post("/submit", (req, res) => {
-	res.json(req.body);
+//PUT THIS LAST - no one should make it here...
+app.use((req, res) => {
+	res.status(404).send('404 resource not found')
 });
 
 app.listen(config.port, () => {

@@ -70,8 +70,6 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 1. From the terminal type node the number of this file, then hit tab to autocomplete to run the file. Hit return to start the server, control click to open the browser and verify behavior.
 
-
-
 1. Hit control-c in the terminal to stop the server - but return to the prompt.
 
 ### 4 Server unreachable
@@ -85,30 +83,35 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 1. Hit control-c in the terminal to stop the server - but return to the prompt.
 
-### Favicon
+### 5 Server router
 
-1. Open 2server-mod-req. A quick way to make static assets available is to use the middleware on line 7 - this makes what is available in the public directory available. 
+1. Open 5server-router.js. Notice the port it will start on.
 
-1. Notice the favicon in the browser tabs. It is a ukelele. 
+1. Notice the order of the middleware, 5server-router.js line 8 alters the request object by adding a message, and calls next().
 
+1. Line 14 requires routes/index.js and if you look in this file, the message is appended to.  
 
-1. View the require for serve-favicon and the entry in package.json
+1. From the terminal type `node` space and then the number of this file, then hit tab to autocomplete to run the file. Hit return to start the server, control click to open the browser. Is it as you expect?
+
+1. Hit control-c in the terminal to stop the server - but return to the prompt.
+
+### 6 Favicons and capitals
+
+1. Open 6server-favicons-caps.js. Notice the port it will start on.
+
+1. In the server file, notice the require for serve-favicon and the entry in package.json
 
 1. Reasons to use this module:
    - User agents request favicon.ico frequently and so you may wish to exclude these requests from your logs by using this middleware before your logger middleware.
    - This module caches the icon in memory to improve performance by skipping disk access.
    - Typically this middleware will come very early in your stack (maybe even first) to avoid processing any other middleware if we already know the request is for /favicon.ico. 
 
-### lowercase paths
-1. express-lowercase-paths   
-    - Test this by trying to reach: http://localhost:3000/CAPITALS
-    - Notice the output
-    - View the code 
-    ```javascript
-    const lowercasePaths = require("express-lowercase-paths")
+1. From the terminal type `node` space and then the number of this file, then hit tab to autocomplete to run the file. Hit return to start the server, control click to open the browser. 
 
-    app.use(lowercasePaths());
-    ```   
+1. Notice the favicon in the browser tabs. It is a ukelele. You may need to open browser dev tools, right-click the refresh icon and choose empty cache and hard reload.
+
+    ### lowercase paths
+1. Notice the use of the module `express-lowercase-paths`   
     - This Express middleware module that will redirect user HTTP requests that contain uppercase letters, to the same URL converted to lowercase, without modifying query parameters.
     - Why use this module?
         - for parameter normalization and SEO purposes
@@ -116,3 +119,37 @@ There is no code to be copied in these demos, these directions can be opened on 
         - Quicker than writing code that normalizes individual URL parameters
         - good for SEO (by ensuring there is single canonical URL for all of your content).
         - A 301 redirect is used to ensure that search engines are redirected to the lowercase, canonical version of your content
+
+1. Try hitting http://localhost:3746/CAPITALS in the browser. Notice the output in the browser.
+
+1. Hit control-c in the terminal to stop the server - but return to the prompt.
+
+### 7 Server 404
+
+1. Open 7server-404.js. Notice the port it will start on.
+
+1. Notice how the last middleware assumes that if you have reached it, we have a 404.
+
+1. From the terminal type node the number of this file, then hit tab to autocomplete to run the file. Hit return to start the server, control click to open the browser and verify behavior.
+
+1. Hit control-c in the terminal to stop the server - but return to the prompt.
+
+### 8 Server errors
+
+1. Open 8server-error.js. Notice the port it will start on.
+
+1. Notice on line 21 there is a new Error thrown. Express understands to return this type of synchrounous error.
+
+1. From the terminal type node the number of this file, then hit tab to autocomplete to run the file. Hit return to start the server. Try to hit the URL http://localhost:3748/syncerror control click to open the browser and verify behavior.
+
+    Open the network tab of the browser and look at the type of status code returned. 
+
+1. Now look at line 26 of the server file. This is an asynchronous error, which is caught in the handler, and next() is called.  This should cause teh handler to be called that takes in an error. Try to hit the URL http://localhost:3748/readnext control click to open the browser and verify behavior.
+
+1. Now check out line 37. Notice someoe commented out teh call to next. Try to hit the URL http://localhost:3748/readnext control click to open the browser and verify behavior.
+
+1. Hit control-c in the terminal to stop the server - but return to the prompt.
+
+
+
+
