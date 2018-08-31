@@ -38,6 +38,10 @@ Please follow the steps while viewing the project at:
 
 1. Note how a new ‘migration file’ has been created as `migrations/20170323125040_init.js` - this file specifies the schema of the database table that you’ll be storing the users in.
 
+    Execute this migration by using this at the command line, at the same level as knexfile.js
+
+    
+
 1. Note how in `routes/index.js` and `routes/users.js`, the contents of the module have been wrapped into a function (turning the module into a “parametric module”), and how that module extracts the `db` property from the argument it receives.
 
 ## Explore server.js
