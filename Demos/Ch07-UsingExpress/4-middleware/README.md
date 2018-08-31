@@ -144,9 +144,9 @@ There is no code to be copied in these demos, these directions can be opened on 
 
     Open the network tab of the browser and look at the type of status code returned. 
 
-1. Now look at line 26 of the server file. This is an asynchronous error, which is caught in the handler, and next() is called.  This should cause teh handler to be called that takes in an error. Try to hit the URL http://localhost:3748/readnext control click to open the browser and verify behavior.
+1. Now look at line 26 of the server file. This is an asynchronous error, which is caught in the handler, and next() is called.  This should cause teh handler to be called that takes in an error. Try to hit the URL http://localhost:3748/readnext to open the browser and verify behavior.
 
-1. Now check out line 37. Notice someoe commented out teh call to next. Try to hit the URL http://localhost:3748/readnext control click to open the browser and verify behavior.
+1. Now check out line 37. Notice someone commented out the call to next. Try to hit the URL http://localhost:3748/readunhandled to open the browser and verify behavior. We will discuss how to account for unhandled errors.
 
 1. Hit control-c in the terminal to stop the server - but return to the prompt.
 
