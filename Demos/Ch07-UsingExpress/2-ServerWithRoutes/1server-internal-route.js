@@ -15,6 +15,6 @@ app.listen(port, (err) => {
     return console.log('something bad happened', err)
   }
 
-	console.log(`Listening on port http://localhost:${port} ...`);
+	console.log(`Listening at http://localhost:${port} ...`);
 })
 

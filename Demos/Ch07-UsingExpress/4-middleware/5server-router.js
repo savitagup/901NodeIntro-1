@@ -14,5 +14,5 @@ app.use(function (req, res, next) {
 app.use(require("./routes/index.js"));
   
 app.listen(config.port, () => {
-	console.log(`Listening on port http://localhost:${config.port}`);
+	console.log(`Listening at http://localhost:${config.port}`);
 });
