@@ -1,6 +1,6 @@
 const express = require('express')  
 const app = express();
-const config = require("./config.json");
+const config = {port: 3742}; 
 
 
 //log request handlers

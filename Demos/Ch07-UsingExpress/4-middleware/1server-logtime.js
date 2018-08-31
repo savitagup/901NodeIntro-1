@@ -6,9 +6,6 @@ const config = {port: 3741}
 
 let app = express();
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
-
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(function (req, res, next) {

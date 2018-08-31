@@ -1,13 +1,10 @@
-
-
 const express = require("express");
 const favicon = require('serve-favicon');
 const path = require('path');
 const lowercasePaths = require("express-lowercase-paths")
-
+const config = {port: 3746} ;
 
 let app = express();
-
 
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
@@ -36,6 +33,7 @@ app.post("/submit", (req, res) => {
 	res.json(req.body);
 });
 
-app.listen(3177);
+app.listen(config.port, () => {
+	console.log(`Listening on port http://localhost:${config.port}`);
+});
 
-console.log('Listening on http://localhost:3177');
