@@ -1,29 +1,26 @@
-# Chapter 7 Exercise 3: Add Error Handling Middleware
+# Chapter 7 Exercise 3: Error Handling Middleware
 
-## Objectives:
-* Use new express modules for routing
-* Share data between modules
-* Use ES6 Object destructuring
-* Use Error-handling Express middleware
+## View a project with demonstrates:
+* Use of new express modules for routing
+* Sharing data between modules
+* Using ES6 Object destructuring
+* Using Error-handling Express middleware
 
-Continue working in your `WIP\Ch07\express-server` directory. If you did not complete the last exercise, you can copy the solution from the last exercise in the solutions directory to be your starting point.
+You will be viewing a project based on our previous projects that has been modified to demonstrate  these concepts.
 
-
-## New Packages
-
-1. Use `npm install -S express-promise-router unhandled-error` to install these modules.
 
 ## Steps
-1. You need to navigate to the directory Labs/Ch07-UsingExpress/Exercise04-ErrorHandlingMiddleware/__End__/code
 
-1. Open the file `server.js`. Add two require statements for the new moduel you added:
+1. Open the express-server7-3 project in this folder
+
+1. Notice the new modules of express-promise-router unhandled-error being used in `server.js`. 
 	
 	```javascript
 		const expressPromiseRouter = require("express-promise-router");
 		const unhandledError = require("unhandled-error");
 	```
 
-1. Unhandled error module :
+1. The Unhandled error module :
 	```
 	Catches all unhandled Promise rejections.
 	Catches all uncaught synchronous exceptions.
@@ -31,7 +28,7 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 	Automatically crashes your process to prevent data loss or corruption.
     ```
 
-1. You can add additional code after existing code. The first call you can make is to `unhandledError()` to create a new variable named `errorReporter`: [this is the unhandled error handler]
+1. The `unhandledError()` takes a callback to habdle error. This is being assigned to a new variable named `errorReporter`: [this is the unhandled error handler]
 
 	```javascript
 		let errorReporter = unhandledError((err) => {
@@ -44,14 +41,14 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 
 		The callback that accepts an `err` argument will make a call to `console.error()`, with the `stack` property of the `err` object. This will contain the message and stacktrace for the error.
 
-1. We want to be able to use this errorReporter in other modules. In the future there may be more things we wish to share. So create a variable called `state` that is an object literal. How wil you declare it knowing that it might be changed?
+1. We want to be able to use this errorReporter in other modules. In the future there may be more things we wish to share. The variable called `state` is an object literal.  
 
-1. In this state object, store the `errorReporter` in a property with the same name. The `state object` will be passed around to other modules, so that they can access the `errorReporter` if needed.
+1. In this state object, the `errorReporter` is stored in a property with the same name. The `state object` will be passed around to other modules, so that they can access the `errorReporter` if needed.
 
-1. Find your code that has:
+1. The code we had used to load routes had been:
 	`app.use(require("./routes/index.js"));`
 
-1. We will replace this now to use this code which uses an expressPromiserouter instead. 
+1. This has now been replaced with the use of an expressPromiserouter instead. 
 
 	```javascript
 		/* All routers and middlewares are wrapped into an express-promise-router to
@@ -67,66 +64,45 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 
 ### Add middleware error handler
 
-1. Create a directory and file  `middleware/error-handler.js`.
+1. A new file has been created in  `middleware/error-handler.js`.
 
-1. Add this code to the file:
+1. Review this code. It takes in the errorReporter using object destructuring syntax. 
 	```javascript
-		let isInDevelopmentMode = (process.env.NODE_ENV === "development");
-
+	
 		module.exports = function({errorReporter}) {
-			return function(err, req, res, next) {
-				let stackTrace;
-
-				if (isInDevelopmentMode) {
-					stackTrace = err.stack;
-				} else {
-					stackTrace = null;
-				}
-
-				errorReporter.report(err, {
-					req: req,
-					res: res
-				});
-
-				res.status(500).render("error", {
-					errorMessage: "Internal Server Error",
-					stackTrace: stackTrace
-				});
-			};
-		}
-
 	```
 
-1. This assigns the result of `(process.env.NODE_ENV === "development")` to `isInDevelopmentMode`
-	- Assigns a new function to `module.exports`, that takes a single argument and uses object destructuring to extract the `errorReporter` property, and which returns an error handling middleware that: [this is the wrapper function that takes in the state object]
-		1. Assigns either `err.stack` (when in development mode) or `null` (when not in development mode) to the `stackTrace` variable
-		2. Calls `errorReporter.report()` with the following arguments:
-			1. The `err` object
-			2. A new object containing `req` and `res` as properties with the same name
-		3. Calls `res.status` with `500` as an argument, and then immediately chains on a call to `.render()` with the following arguments:
-			1. The string "error", as the template name
-			2. A new object, containing the properties:
-				1. `errorMessage`, containing the string "Internal Server Error"
-				2. `stackTrace`, containing the variable of the same name
+	The state object was passed to this router. It may end up with many properties, but we only care about the errorReporter property. 
 
-1. Back in `server.js` add this line of code: 
+	This code is now returning the error handlng middleware we have seen used before. Inside, it uses the errorReporter to report. 	
 
+	Depending on the envuronment either `err.stack` (when in development mode) or `null` (when not in development mode) is used set for the `stackTrace` variable
+	
+	The `errorReporter.report()` is called with the `err` object and a new object containing `req` and `res` as properties with the same name.
+
+	The response status is set using `res.status` with `500` as an argument, and then immediately chains on a call to `.render()` with the following arguments:
+	1. The string "error", as the template name
+	2. A new object, containing the properties:
+		1. `errorMessage`, containing the string "Internal Server Error"
+		2. `stackTrace`, containing the variable of the same name
+
+
+	So the call in server.js 
 	`app.use(require("./middleware/error-handler")(state));`
 
-	This requires it, and immediately calls the resulting function with the `state` object as its only argument, and passing the result into a new `app.use()` call that comes right before the existing call to `app.listen()`.
+	requires it, and immediately calls the resulting function with the `state` object as its only argument, and passing the result into a new `app.use()` call that comes right before the existing call to `app.listen()`.
 
-1. Modify `routes/index.js`:
-
-	* remove this line of code: `const express = require("express");`
-	* Change this line of code: 
+1. The `routes/index.js` has been modified. 
 	
 		`let router = express.Router();`
 
-		to this
+		has changed to this
 
 		`let router = require("express-promise-router")();`
 
-1. Add a file to views called error.pug with these contents:
+	This assured that next is called even when there is an error, and next was not explicitly called.
+
+1. A file has been added to views called error.pug with these contents:
 
 	```
 	extends layout
@@ -140,7 +116,7 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 	```
 	
 ## Run the application
-1. Install Node dependencies `npm install` if running solution.
-1. Run the server `nodemon server.js`
+1. At the same level as package.json, install the node dependencies `npm install` 
+1. Run the server `node server.js`
 1. Point a browser at the URL `http://localhost:3000`
-1. You should see the pages still working. If not fix any problems
+1. You should see the pages still working, now with error handling
