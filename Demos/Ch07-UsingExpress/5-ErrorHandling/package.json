@@ -7,12 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@git.cryto.net:joepie91/student-management-example.git"
-  },
   "keywords": ["example"],
-  "author": "Sven Slootweg",
+ 
   "license": "WTFPL",
   "dependencies": {
     "express": "^4.15.2",

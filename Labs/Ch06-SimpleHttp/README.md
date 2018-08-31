@@ -36,7 +36,7 @@ NOTE: You can refer to the demo code for hints/help on this lab.
             return console.log('something bad happened', err);
         }
 
-        console.log(`server is listening on ${port}`);
+        console.log(`server is listening on 3131`);
         })
     ```
 

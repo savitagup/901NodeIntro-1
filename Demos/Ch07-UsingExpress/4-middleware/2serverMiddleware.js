@@ -1,5 +1,7 @@
 const express = require('express')  
 const app = express();
+const config = require("./config.json");
+
 
 //log request handlers
 app.use((request, response, next) => {  
@@ -20,8 +22,7 @@ app.get('/', (request, response) => {
   })
 })
 
-let config = {port: 3005};
 app.listen(config.port, () => {
-	console.log(`Listening on port http://localhost:${config.port}...`);
+	console.log(`Listening on port http://localhost:${config.port}`);
 });
 

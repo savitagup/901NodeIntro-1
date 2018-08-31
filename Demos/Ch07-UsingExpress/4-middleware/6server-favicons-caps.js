@@ -9,11 +9,16 @@ const lowercasePaths = require("express-lowercase-paths")
 let app = express();
 
 
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+app.use((req, res, next)=> {
+	const now = new Date().toString();
+	console.log(`${now}: ${req.method} ${req.url}`);
+	next();
+
+})
 
 app.use(lowercasePaths());
-
-
 
 app.get("/", (req, res) => {
 	res.send(`
@@ -31,6 +36,6 @@ app.post("/submit", (req, res) => {
 	res.json(req.body);
 });
 
-app.listen(3000);
+app.listen(3177);
 
-console.log('Listening on http://localhost:3000');
+console.log('Listening on http://localhost:3177');

@@ -104,7 +104,7 @@ module.exports = function({db}) {
 	router.post("/:studentId/update", (req, res) => {
 		return Promise.try(() => {
 			return createStudentValidator().run(req.body);
-		}).then((results) => {;
+		}).then((results) => {
 			return updateStudent(req.student, Object.assign({}, req.body, {
 				hireDate: parseHireDate(req.body.hireDate),
 				interests: parseInterests(req.body.interests)
