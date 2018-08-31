@@ -6,14 +6,15 @@
 * Using ES6 Object destructuring
 * Using Error-handling Express middleware
 
-You will be viewing a project based on our previous projects that has been modified to demonstrate  these concepts.
+You will be viewing an updated project based on our previous projects which demonstrates  these concepts.
+
+Please follow the steps while viewing the project at:
+`\901NodeIntro\Solutions\Ch07\express-server7-3`
 
 
 ## Steps
 
-1. Open the express-server7-3 project in this folder
-
-1. Notice the new modules of express-promise-router unhandled-error being used in `server.js`. 
+1. In server.js - notice the new modules of express-promise-router unhandled-error being used
 	
 	```javascript
 		const expressPromiseRouter = require("express-promise-router");

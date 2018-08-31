@@ -1,15 +1,16 @@
 # Chapter 8: Exercise 2: Database Access from Express
+
+You will be viewing an updated project based on our previous projects which demonstrates the following concepts & additions: 
+
 ## Overview
 * Knex/database use with connect-session-knex
 * Abstraction functions as separate modules (createStudentObject)
 * Random data generation (faker, pick-item, range)
-* Install faker, pg, knex, pick-item, range
-* Add database details to config.json
-* Set up Knex (using Knexfile)
-* Add migration for students table (will be pre-supplied)
-* Modify expressSession call to use connect-session-knex with Knex instance
-* Change state object to include Knex instance
-* Wrap ./routes/{index.js,users.js} contents in a wrapper function that accepts state object and extracts the db instance from it
+* Use of faker, pg, knex, pick-item, range
+* Database details added to config.json
+* Modify of expressSession call to use connect-session-knex with Knex instance
+* Changed state object to include Knex instance
+* Wrapped ./routes/{index.js,users.js} contents in a wrapper function that accepts state object and extracts the db instance from it
 * Create route for generating fake users using faker/pick-item/range
 * Write createStudentObject wrapper (which turns the hireDate into a moment instance)
 * Remove hardcoded student entries
@@ -17,11 +18,20 @@
 * Modify template to have 'generate students' button
 
 
+Please follow the steps while viewing the project at:
+`\901NodeIntro\Solutions\Ch08\express-server8-2`
+
+
+
 ## Steps:
-1. You need to navigate to the directory Labs/Ch08-UsingSessions/Exercise07-DatabaseAccessFromExpress/__End__/code
-1. Install: faker, pg, knex, pick-item, range
-1. Note how database connection details have been added to the `config.json` file. These should work if you are using a class virtual machien setup. If not ask your instructor for the login details.
+1. Installed in package.json: faker, pg, knex, pick-item, range
+
+1. Open the npm description for faker t find out what this is about.
+
+1. Note how database connection details have been added to the `config.json` file. These should work if you are using a class virtual machine setup. If not ask your instructor for the login details.
+
 1. Note how a `knexfile.js` has been created, that mostly just re-exports the database configuration values from `config.json` - but it does so in the specific format that Knex expects. This file is used by Knex and your application to configure database access.
+
 1. Note how a new ‘migration file’ has been created as `migrations/20170323125040_init.js` - this file specifies the schema of the database table that you’ll be storing the users in.
 
 1. Note how in `routes/index.js` and `routes/users.js`, the contents of the module have been wrapped into a function (turning the module into a “parametric module”), and how that module extracts the `db` property from the argument it receives.
@@ -42,6 +52,7 @@ Note how server.js has been updated in a number of ways:
 1. Returning to `routes/index.js`:
     - The `lib/create-student-object.js` module is required, passing on the `db` from the state object.
     - The `/` and `/class` routes are modified - the hardcoded student data is removed, and instead the students are retrieved from the database, transformed using the `createStudentObject` abstraction, and then passed into a template.
+
 ## Run the application
 1. Install Node dependencies `npm install`
 1. Run the server `nodemon server.js`

@@ -1,14 +1,22 @@
 # Chapter 8: Exercise 3: UserManagementDB-Registration
+
+You will be viewing an updated project based on our previous projects which demonstrates the following concepts & additions: 
+
 ## New Concepts
 * Password hashing with scrypt-for-humans
 * Handling duplicates (via UNIQUE constraints)
 * Keeping track of the currently-logged-in user in session data
 * Using a custom middleware to make the user object itself available on the `req` object, doing a database query for each request
 
+
+Please follow the steps while viewing the project at:
+`\901NodeIntro\Solutions\Ch08\express-server8-3`
+
+
 ## Steps
-1. You need to navigate to the directory Labs/Ch08-UsingSessions/Exercise08-UsingSessions/__End__/code
-1. Install: `scrypt-for-humans`, `database-error`
-	- Note how a new migration has been added at `20170325191954_users.js`, defining the ‘users’ table. Especially important is the `.unique()` property on the `username` column.
+1. Installed in package.json: `scrypt-for-humans`, `database-error`
+
+1. Note how a new migration has been added at `20170325191954_users.js`, defining the ‘users’ table. Especially important is the `.unique()` property on the `username` column.
 	- Note how `routes/users.js` has changed:
 		- The `/login` route now no longer checks for a hardcoded password, but instead:
 		- Fetches the specified user from the database (throwing an error if it doesn’t exist)
@@ -27,21 +35,30 @@
 		- Tries to fetch the user from the database that corresponds to the “logged in user” ID stored in the session data.
 		- If successful, stores it as `req.user` so that other routes can access it.
 		- If unsuccessful, forcibly logs the user out (as their account has been removed since they logged in).
-1. Install database-error, scrypt-for-humans
+
+1. Installed database-error, scrypt-for-humans
 	- Note migration for users table
 	- Note fetch-user middleware, which (when a valid session exists) automatically fetches the user object for that session from the DB and stores it on the `req`, or destroys the session if that user no longer exists
+
 1. Note the usage of fetch-user middleware in server.js
 	- Note the change for require-login middleware to check for a req.user instead of a `loggedIn` status in the session data
 		- Instead of storing a `loggedIn` status on the session (in routes/users.js), store the userId of the logged-in user
+
 1. Note the register route and template, for creating a new account (using scrypt-for-humans for password hashing), and using database-error to detect already-existing accounts in the database (enforced by a UNIQUE constraint)
+
 1. Note update to login template to take in a username as well, not just a password
+
 1. Note update to login route to fetch the specified user from the database and check their password (using scrypt-for-humans), throwing an AuthenticationError if either of those steps fail
+
+
 1. Note update to layout to add a registration button
+
+
 ## Run the application
 1. Install Node dependencies `npm install`
 1. Run the command `knex migrate:latest`
    * if you get a migration corrupted message: drop all tables from Postgres using the pgAdmin client. This may happen if you run the exercises in a non-sequential order.
-1. Run the server `nodemon server.js`
+1. Run the server `node server.js`
 1. Point a browser at the URL `http://localhost:3000`
 1. You should see the output from the server. If not fix any problems
 1. You should now be able to register/login.
