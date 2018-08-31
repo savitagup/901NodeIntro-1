@@ -1,7 +1,11 @@
-# Chapter 9 Exercise 14: Database Relations
+# Chapter 9 Exercise 4: Database Relations
 ## Objectives:
 * Working with transactions
 * Working with FKs/relations in databases
+
+Please follow the steps while viewing the project at:
+`\901NodeIntro\Solutions\Ch09\express-server9-4`
+
 
 ## Overview of Steps:
 * Install and use simple-array-diff

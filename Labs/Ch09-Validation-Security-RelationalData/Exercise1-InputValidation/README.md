@@ -1,13 +1,21 @@
 # Chapter 9 Exercise 1: Input Validation
+
+You will be viewing an updated project based on our previous projects which demonstrates the following concepts & additions: 
+
+
 ## New concepts:
 * Validating input
 * Displaying errors to the user by re-rendering forms
 * Pre-filling form data
 * Highlighting invalid fields + conditional classes in Pug
 
+Please follow the steps while viewing the project at:
+`\901NodeIntro\Solutions\Ch09\express-server9-1`
+
+
 ## Steps
-1. You need to navigate to the directory Labs/Ch09-Validation-Security-RelationalData/Exercise11-InputValidation/__End__/code
-1. Install: `checkit`
+1. Installed in package.json: `checkit`. Find the docs on npm, what does this do
+
 1. Note how `server.js` has a new middleware defined that:
     - Stores the form data in a template local, so that templates can access it
     - Stores a default, empty errors object as a template local
@@ -16,7 +24,7 @@
 
 1. Note how in `routes/users.js`:
 
-1. Validators have been added in the route handlers, using `checkit` to validate the form data on `req.body`.
+    1. Validators have been added in the route handlers, using `checkit` to validate the form data on `req.body`.
 
 1. Some custom objects have been defined near the top of the file - these are errors that follow the format of `checkit` error objects, but that are used for validation errors that do not come from `checkit`. This is so that the templates only need to care about a single error object format.
 

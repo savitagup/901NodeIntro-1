@@ -1,4 +1,4 @@
-# Chapter 9: Exercise13: CRUD
+# Chapter 9: Exercise 3: CRUD
 ## New Concepts
 * Selecting specific single database items
 * "Edit item" forms that prefill the original data
@@ -6,6 +6,10 @@
 * Sending JSON responses
 * Add NotFoundError error type to errors.js
 * Provide data validation using checkit
+
+Please follow the steps while viewing the project at:
+`\901NodeIntro\Solutions\Ch09\express-server9-3`
+
 
 ## Steps
 1. You need to navigate to the directory Labs/Ch09-Validation-Security-RelationalData/Exercise13-CRUD/__End__/code

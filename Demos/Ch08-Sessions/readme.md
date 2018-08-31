@@ -1,1 +1,1 @@
-mv example here
+the big demo here is the Chapter 8 exercises
