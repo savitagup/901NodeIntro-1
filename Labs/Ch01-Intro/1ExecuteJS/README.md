@@ -68,7 +68,7 @@
 
     With the array, can you loop through and find the high and low temp of the week?
 
-    After finding the days, print something similar to the following:
+    After finding the highest high temp day, and lowest low temp day, print something similar to the following:
 
     ```
     The lowest temperature this week was on Wed and it was 65
@@ -97,9 +97,9 @@
       console.log('hello');
     ```
 
-1. Right click on your introduction.js file to open to a terminal at this path.
+1. Right click on your `introduction.js` file to open to a terminal at this path.
 
-1. Note the command it says to run to verify your work. This is how you will check your work for future challenges.
+1. Note the command below that the program says to use to verify your work. This is how you will check your work for future challenges.
 
     ```
     javascripting verify introduction.js
@@ -121,6 +121,7 @@ console.log(first([],3));
 console.log(first([7, 9, 0, -2],3));
 console.log(first([7, 9, 0, -2],6));
 console.log(first([7, 9, 0, -2],-3));
+
 Expected Output : 
 7
 [] 
