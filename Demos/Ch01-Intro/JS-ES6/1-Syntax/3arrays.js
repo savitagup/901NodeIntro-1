@@ -2,8 +2,8 @@
             const simpleNameArray = ['Adam','Judy','Cody'];
             const ages = new Array(45, 41, 1);
             
-            console.log(simpleNameArray[0] + ' is ' + 
-                                   ages[0] + ' years old');
+            console.log(simpleNameArray[2] + ' is ' + 
+                                   ages[2] + ' years old');
 
             const person = {
                 name: "Adam",
@@ -44,7 +44,10 @@
                         // ["a", "e", "i", "j", "q", "q", "z"]
 
             var scores = [1, 10, 21, 2]; 
-            console.log(scores.sort()); // [1, 10, 2, 21]
+            console.log(scores.sort()); 
+            
+            
+            // [1, 10, 2, 21]
             
             console.log(scores.sort( (a,b)=> {
                 console.log(`a,b`, a, b)
