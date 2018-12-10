@@ -145,6 +145,8 @@
 
 1. Add another prototype function for `hasMember` which uses Array.prototype.includes() to see if the array contains the passed in string name. Check MDN if you need help: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
+1. Make sure you use module.exports to export the Band function.
+
 1. Create a `call-band.js` file which uses (requires) the `bands.js` module. Inside, create a band object similar to this:
     ```javascript
         const beatles = new Band('The Beatles', ['John', 'Paul', 'George', 'Ringo']);
