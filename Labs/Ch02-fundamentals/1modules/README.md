@@ -81,7 +81,7 @@
         console.log(`1+2=`,myCalc.add(1,2));
     ```
 
-1. Now create subtract and multiple functions and call those as well.
+1. Now create subtract and multiply functions and call those as well.
 
     ###  Practice with a constructor functions & classes
 
