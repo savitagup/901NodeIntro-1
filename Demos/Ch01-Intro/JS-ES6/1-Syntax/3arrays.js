@@ -11,7 +11,7 @@
             }
 
            const oneArray = [1,2,3];
-           const secondArray= [1,2,3];
+           const secondArray = [1,2,3];
 
            console.log(oneArray == secondArray)
 
@@ -21,19 +21,19 @@
             bands.push('Aerosmith');
             bands.push('The Temptations');
             console.log('After three pushes:');
-            console.log(bands); // ["The Beatles", "Aerosmith", "The Temptations"]
+            console.log(bands); // ['The Beatles', 'Aerosmith', 'The Temptations']
 
             const aBand = bands.pop();
             console.log(aBand);
-            console.log(bands); // ["The Beatles", "Aerosmith"]
+            console.log(bands); // ['The Beatles', 'Aerosmith']
 
             //Slicing
             console.groupCollapsed('Slicing...');
             const values = ['a','b','c','d','e'];
-            console.log(values.slice()); // ["a", "b", "c", "d", "e"]
-            console.log(values.slice(1)); //  ["b", "c", "d", "e"]
-            console.log(values.slice(1,3)); //  ["b", "c"]
-            console.log(values.slice(-2)); // ["d", "e"] 
+            console.log(values.slice()); // ['a', 'b', 'c', 'd', 'e']
+            console.log(values.slice(1)); //  ['b', 'c', 'd', 'e']
+            console.log(values.slice(1,3)); //  ['b', 'c']
+            console.log(values.slice(-2)); // ['d', 'e'] 
             console.groupEnd();
 
             //Sorting
@@ -41,7 +41,7 @@
            
             const letters = ['z','q','e','a','q','j','i']; //
             console.log(letters.sort());
-                        // ["a", "e", "i", "j", "q", "q", "z"]
+                        // ['a', 'e', 'i', 'j', 'q', 'q', 'z']
 
             var scores = [1, 10, 21, 2]; 
             console.log(scores.sort()); 
