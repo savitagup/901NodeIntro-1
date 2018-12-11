@@ -9,8 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bhttp": "^1.2.4",
     "bluebird": "^3.5.0",
     "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   }
 }

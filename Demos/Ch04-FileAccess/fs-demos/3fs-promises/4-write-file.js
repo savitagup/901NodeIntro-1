@@ -12,6 +12,8 @@ Promise.try(() => {
 	return fs.readFileAsync("input.txt");
 }).then((data) => {
 	console.log(`Asynchronous read: ${data.toString()}`);
+}).catch((err) => {
+	console.log(`Error: err`);
 });
 
 console.log('End of Program');

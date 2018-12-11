@@ -2,7 +2,7 @@
             y;
             var y = 5;
 
-         //   z;              // ReferenceError: x is not defined
+         //   z;              // ReferenceError: z is not defined
          //   const z = 3;
             
             x;              // ReferenceError: x is not defined
