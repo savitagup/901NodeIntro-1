@@ -11,7 +11,7 @@
 
 1. Go through the wizard to create a package.json. Call the project `timeexample`. Notice, and accept the other default values. You can supply whatever info that you like. This is more for you to practice and see the outcome of the wizard.
 
-1. Once complete - view the geerated package.json.
+1. Once complete - view the generated package.json.
 
 1. We want to get the package called `moment`, and to add it to the newly created package.json.
 
