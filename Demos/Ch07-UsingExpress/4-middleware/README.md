@@ -53,7 +53,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 1. Open 2server-change-req.js. Notice the port it will start on.
 
-1. Note the use of sendFile on line 10 - this will cause all in coming request to go the site down page.
+1. Note the additional property to the request object on line 14. This makes request.chance available to future middleware.
 
 1. From the terminal type node 2 then hit tab to autocomplete to run the file. Hit return to start the server, control click to open the browser and verify behavior.
 
