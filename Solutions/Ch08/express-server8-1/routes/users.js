@@ -10,11 +10,11 @@ router.get("/login", (req, res) => {
 });
 
 router.post("/login", (req, res) => {
-	return Promise.try(() => {
+	 Promise.try(() => {
 		if (req.body.password === "secretpassword") {
 			req.session.loggedIn = true;
 
-			return Promise.try(() => {
+			 Promise.try(() => {
 				return req.saveSession();
 			}).then(() => {
 				res.redirect("/");
