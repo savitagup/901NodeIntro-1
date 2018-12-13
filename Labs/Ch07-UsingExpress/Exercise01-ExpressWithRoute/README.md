@@ -84,4 +84,4 @@
 
 ## Bonus
 
-1. Add a weather page and display weather data from randomly generated high and low values for the week.
+1. Add a GET weather route for /weather - when localhost:3000/weather is loaded in browser, display weather data from randomly generated high and low values for the week.
