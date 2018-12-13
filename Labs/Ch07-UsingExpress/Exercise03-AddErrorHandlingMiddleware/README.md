@@ -29,7 +29,7 @@ Please follow the steps while viewing the project at:
 	Automatically crashes your process to prevent data loss or corruption.
     ```
 
-1. The `unhandledError()` takes a callback to habdle error. This is being assigned to a new variable named `errorReporter`: [this is the unhandled error handler]
+1. The `unhandledError()` takes a callback, which will be passed the error.  The call to unhandledError creates an errorReporter which is assigned to a local variable named `errorReporter`: [this is the unhandled error handler]
 
 	```javascript
 		let errorReporter = unhandledError((err) => {
