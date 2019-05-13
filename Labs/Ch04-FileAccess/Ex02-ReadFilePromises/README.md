@@ -22,13 +22,13 @@
 
 1. Run `npm init` accepting the defaults to create a package.json
 
-1. Add bluebird as a production dependecy. `npm install bluebird -S`
+1. Add bluebird as a production dependency. `npm install bluebird -S`
 
 1. Where can you find the documentation on Bluebird?
 
 1. Look for and read the description of how to use of `Promise.promisifyAll`.  
 
-1. Now visit the demos at `\Demos\Ch04-FileAccess\fs-demos\2fs-promises`. Read each example and execute it. Examine the order of the console outputs.
+1. Now visit the demos at `\Demos\Ch04-FileAccess\fs-demos\2fs-promises`. Read each example and execute them. Examine the order of the console outputs.
 
 1. Now that you have seen these code examples, you will do similar work.  In your code `promise-read.js`, require bluebird and use it to promisifyAll of the fs module
 

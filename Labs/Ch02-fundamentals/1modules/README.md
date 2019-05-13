@@ -20,7 +20,7 @@
 
     NOTE: The .js extension is optional.
 
-1. Open a VSCode terminal at this pont by right clicking on the file and choosing open at terminal.
+1. Open a VSCode terminal at this point by right clicking on the file and choosing open at terminal.
 
 1. Use `node main` to run the file and read the error.
     
@@ -81,7 +81,7 @@
         console.log(`1+2=`,myCalc.add(1,2));
     ```
 
-1. Now create subtract and multiply functions and call those as well.
+1. Now create subtract and multiply functions and call those with values to test them as well.
 
     ###  Practice with a constructor functions & classes
 

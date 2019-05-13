@@ -44,7 +44,7 @@ Read a file of temperatures for the week into your program and use a package to 
     const weatherArray = JSON.parse(contents);
     ```
 
-1. This is asynchronous, you can use Promises to indicate the "sequential" asynchrounous steps. We have seen using BlueBird but there is now also the ability to promisify functions within Node using a core module util.
+1. This is asynchronous, you can use Promises to indicate the "sequential" asynchronous steps. We have seen using BlueBird but there is now also the ability to promisify functions within Node using a core module util.
 
 https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_promisify_original
 

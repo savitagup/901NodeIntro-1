@@ -84,9 +84,6 @@ If you need additional help, ask your instructor or fellow students.
 
 1. run the code and watch for the output
 
-1. when exit the program - using process - indicate how many time 11 was sighted.
+1. when exiting the program - use process - indicate how many times 11 was sighted.
 
-1. could do a bigger random generator where it looks for the pattern 1111
-
-1. create those listening could console.log make a wish! or make note of it somehow
 

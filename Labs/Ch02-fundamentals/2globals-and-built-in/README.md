@@ -23,7 +23,7 @@
 
     Do you see your arguments printed?
 
-1. Look at the node documentation https://nodejs.org/docs/latest-v8.x/api/os.html for os and the functions totalmem & freemem. In a new os.js file, require this built in module, and use backticks to output a message such as :
+2. LOpen the node documentation to https://nodejs.org/dist/latest-v10.x/docs/api/os.html and read about the functions **totalmem** & **freemem**. In a new **os.js** file, require this built in os module, and use backticks and the functions to output a message such as :
 
     Total memory: 365128761
     Free memory: 1033749737

@@ -64,9 +64,9 @@
 
 1. In a new file called `weatherweek.js` - create an array of objects with the high/low temps for the week.
 
-    An example to get started { day: “Monday”, high: 80 }   
+    An example to get started { day: “Monday”, high: 80,low: 67 }   
 
-    With the array, can you loop through and find the high and low temp of the week?
+    With the array, can you loop through and find the highest and lowest temp of the week?
 
     After finding the highest high temp day, and lowest low temp day, print something similar to the following:
 
@@ -109,7 +109,7 @@
 
 1. Complete all challenges. 
 
-1. Mark your work as complete using the means specified for your class. Ask your instructor if they forgot to tell you. :)
+1. Mark your work as complete using the means specified for your class. Ask your instructor if they did not tell you. :)
 
 ## Bonus
 
