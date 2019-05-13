@@ -46,9 +46,9 @@ Read a file of temperatures for the week into your program and use a package to 
 
 1. This is asynchronous, you can use Promises to indicate the "sequential" asynchronous steps. We have seen using BlueBird but there is now also the ability to promisify functions within Node using a core module util.
 
-https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_promisify_original
+https://nodejs.org/dist/latest-v10.x/docs/api/util.html#util_util_promisify_original
 
-1. Now with an array of objects find the highest high and lowest low of the week. We have done this in a previous exercise, but now checkout using _lodash functions such as minBy
+1. Now with an array of objects find the highest high and lowest low of the week. We have done this in a previous exercise, but now checkout using _lodash functions such as minBy to solve this problem differently.
 
 https://lodash.com/docs/4.17.10#minBy
 

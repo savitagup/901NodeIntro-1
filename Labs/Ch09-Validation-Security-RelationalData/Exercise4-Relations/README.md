@@ -31,10 +31,11 @@ Please follow the steps while viewing the project at:
     - When deleting a student, all their interests in the database are deleted, too - again using a transaction.
     - When modifying a student, the modified logic in `lib/update-student.js` is used.
     - When fetching an existing student for any reason, in the router parameter logic, the interests are also retrieved (using the modified `lib/create-student-object.js` logic).
+  
 ## Run the application
 1. Install Node dependencies `npm install`
-1. Run the command `knex migrate:latest`
+2. Run the command `knex migrate:latest`
    * if you get a migration corrupted message: drop all tables from Postgres using the pgAdmin client. This may happen if you run the exercises in a non-sequential order.
-1. Run the server `nodemon server.js`
-1. Point a browser at the URL `http://localhost:3030`
-1. You should see the output from the server. If not fix any problems
+3. Run the server `nodemon server.js`
+4. Point a browser at the URL `http://localhost:3030`
+5. You should see the output from the server. If not fix any problems

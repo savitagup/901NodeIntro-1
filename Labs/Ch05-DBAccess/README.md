@@ -12,7 +12,7 @@
 
 ## Steps
 
-1. Create a `package.json` file using `npm init -y`.
+1. In the new Ch05 directory, create a `package.json` file using `npm init -y`.
 
 1. Use `npm install` to add dependencies of `bluebird` and `knex`.
 
