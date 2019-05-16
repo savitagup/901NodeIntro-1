@@ -56,7 +56,7 @@ NOTE: You can refer to the demo code for hints/help on this lab.
 
 1. Refresh your browser, you should see the message you had created.
 
-1. Now change the message to `Hello Universe`.  And change the console.log onstartup to nicely display the full URL - with http:// so that it is clickable. 
+1. Now change the message to `Hello Universe`.  And change the console.log on startup to nicely display the full URL - with http:// so that it is clickable. 
 
 1. After saving your code you should see in the console that the server restarts, and then see your message in the browser.
 
