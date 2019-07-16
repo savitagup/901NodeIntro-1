@@ -9,7 +9,7 @@
 1. Open a command prompt at that location (VSCode integrated terminal) and issue this command:
 `npm init`
 
-1. Go through the wizard to create a package.json. Call the project `timeexample`. Notice, and accept the other default values. You can supply whatever info that you like. This is more for you to practice and see the outcome of the wizard.
+1. Go through the wizard to create a package.json. Call the project `timeexample`. Notice, and accept the other default values by hitting the Enter key. You can supply whatever info that you like. This is more for you to practice and see the outcome of the wizard.
 
 1. Once complete - view the generated package.json.
 
