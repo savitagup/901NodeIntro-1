@@ -11,7 +11,7 @@ module.exports = function({db}) {
 	});
 
 	router.post("/login", (req, res) => {
-		return Promise.try(() => {
+		Promise.try(() => {
 			if (req.body.password === "secretpassword") {
 				req.session.loggedIn = true;
 
