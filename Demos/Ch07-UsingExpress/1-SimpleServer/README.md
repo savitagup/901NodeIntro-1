@@ -8,13 +8,10 @@
 
 1. Examine the code in `simple-express.js`
 
-1. Run simpleServer.js from a terminal / command prompt.
-`node simpleServer`
+1. Run simple-express.js from a terminal / command prompt.
+`node simple-express.js`
 
 1. Navigate to 
 `http://localhost:3000`
 
 1. Stop the server.
-
-1. Now examine the code in simpleServer2.  and
-run simpleServer2 - what happens?
