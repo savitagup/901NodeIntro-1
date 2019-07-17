@@ -2,5 +2,5 @@ console.log(__dirname);
 
 
 process.argv.forEach(element => {
-   console.log(element);
+   console.log(element); 
 });
