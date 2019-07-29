@@ -9,9 +9,6 @@ const server = http.createServer((req, res) => {
   res.end('Hello Universe\n');
 });
 
-//start server and listen on port, hostname(optional),
-//it runs until ended. Ctrl+C or Ctrl+break 
-
 server.listen(port, (err) => {  
   if (err) {
     return console.log('something bad happened', err);
@@ -19,3 +16,6 @@ server.listen(port, (err) => {
 
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+//start server and listen on port, hostname(optional),
+//it runs until ended. Ctrl+C or Ctrl+break 

@@ -12,7 +12,7 @@ module.exports = function({db}) {
 	let router = require("express-promise-router")();
 
 	router.get("/", requireLogin, (req, res) => {
-		return Promise.try(() => {
+		Promise.try(() => {
 			return db("students");
 		}).map((student) => {
 			return createStudentObject(student);
@@ -24,7 +24,7 @@ module.exports = function({db}) {
 	});
 
 	router.get("/class", (req, res) => {
-		return Promise.try(() => {
+		Promise.try(() => {
 			return db("students");
 		}).map((student) => {
 			return createStudentObject(student);
@@ -43,7 +43,7 @@ module.exports = function({db}) {
 		let skillLevel = [1, 2, 3, 4, 5, 6];
 		let domains = ['@gmail.com', '@yahoo.com', '@live.com', '@aol.com'];
 
-		return Promise.try(() => {
+		Promise.try(() => {
 			return range.range(0, 10);
 		}).map((i) => {
 			let nameFirst = faker.name.firstName();
