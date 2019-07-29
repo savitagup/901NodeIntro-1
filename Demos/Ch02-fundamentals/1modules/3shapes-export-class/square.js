@@ -1,4 +1,4 @@
-module.exports = class Square {
+module.exports = class MySquare {
     constructor(width) {
       this.width = width;
     }
