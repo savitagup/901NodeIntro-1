@@ -14,7 +14,7 @@ Please follow the steps while viewing the project at:
 
 ## Steps
 
-1. In server.js - notice the new modules of express-promise-router unhandled-error being used
+1. In `server.js` - notice the new modules of express-promise-router unhandled-error being used
 	
 	```javascript
 		const expressPromiseRouter = require("express-promise-router");
@@ -88,7 +88,7 @@ Please follow the steps while viewing the project at:
 		2. `stackTrace`, containing the variable of the same name
 
 
-	So the call in server.js 
+	So the call in `server.js` 
 	`app.use(require("./middleware/error-handler")(state));`
 
 	requires it, and immediately calls the resulting function with the `state` object as its only argument, and passing the result into a new `app.use()` call that comes right before the existing call to `app.listen()`.
@@ -103,7 +103,7 @@ Please follow the steps while viewing the project at:
 
 	This assured that next is called even when there is an error, and next was not explicitly called.
 
-1. A file has been added to views called error.pug with these contents:
+1. A file has been added to views called `error.pug` with these contents:
 
 	```
 	extends layout

@@ -5,7 +5,7 @@ You will be viewing an updated project based on our previous projects which demo
 ## New Concepts
 * Access to user-specific data via res.locals
 * Conditional logic in Pug templates
-* Modify fetch-user.js to store the user on res.locals as well, making it available to every template
+* Modify `fetch-user.js` to store the user on res.locals as well, making it available to every template
 
 
 Please follow the steps while viewing the project at:

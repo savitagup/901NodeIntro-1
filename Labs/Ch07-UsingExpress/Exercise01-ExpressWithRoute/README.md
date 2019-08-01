@@ -60,7 +60,7 @@
     module.exports = router;
     ```
 
-1. In server.js require the `./routes/index` module, and pass it into a call to `app.use()` - you can do this in one line of code.
+1. In `server.js` require the `./routes/index` module, and pass it into a call to `app.use()` - you can do this in one line of code.
 
 1. Run the server `nodemon server.js`
 

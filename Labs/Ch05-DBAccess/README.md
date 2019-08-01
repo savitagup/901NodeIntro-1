@@ -16,7 +16,7 @@
 
 1. Use `npm install` to add dependencies of `bluebird` and `knex`.
 
-1. Modify the database-practice.js file to require:
+1. Modify the `database-practice.js` file to require:
     ```javascript
     const Promise = require("bluebird");
     const knex = require("knex");

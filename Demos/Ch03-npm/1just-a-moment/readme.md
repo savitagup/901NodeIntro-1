@@ -7,7 +7,7 @@
 
 ## Steps
 
-1. Open timeExample.js and review the code.
+1. Open `timeExample.js` and review the code.
 
     Note the way the require is used without ./
 

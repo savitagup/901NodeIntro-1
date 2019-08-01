@@ -34,7 +34,7 @@
     ```
 
 
-1. Notice the creation of the dist directory. Look at the generated /dist/bundle.js file.
+1. Notice the creation of the dist directory. Look at the generated `/dist/bundle.js` file.
 
 1. Examine the contents of `combine-arrays.html`.
 

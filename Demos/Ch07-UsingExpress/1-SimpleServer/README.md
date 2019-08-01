@@ -8,7 +8,7 @@
 
 1. Examine the code in `simple-express.js`
 
-1. Run simple-express.js from a terminal / command prompt.
+1. Run `simple-express.js` from a terminal / command prompt.
 `node simple-express.js`
 
 1. Navigate to 

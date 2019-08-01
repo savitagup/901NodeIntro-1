@@ -4,9 +4,9 @@
 ## New Concepts
 * Installing csurf
 * Set up csurf app-wide
-* Use an inline middleware in server.js that automatically exposes the CSRF token to every template through res.locals
-* Use UnauthorizedError error type to errors.js
-* Use an inline error-handling middleware in server.js to rethrow CSRF errors as UnauthorizedErrors
+* Use an inline middleware in `server.js` that automatically exposes the CSRF token to every template through res.locals
+* Use UnauthorizedError error type to `errors.js`
+* Use an inline error-handling middleware in `server.js` to rethrow CSRF errors as UnauthorizedErrors
 
 Please follow the steps while viewing the project at:
 `\901NodeIntro\Solutions\Ch09\express-server9-2`

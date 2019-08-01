@@ -10,9 +10,9 @@ Please follow the steps while viewing the project at:
 ## Overview of Steps:
 * Install and use simple-array-diff
 * Add migration for interests table (presupplied)
-* Update create-student-object.js to also auto-load interests for students when asked to
-* Modify update-student.js to diff last-known interests against new set of interests, and remove/add interests accordingly, in a transaction along with the update of the student object itself
-* Add parse-interests.js module for parsing user input in the interests form field
+* Update `create-student-object.js` to also auto-load interests for students when asked to
+* Modify `update-student.js` to diff last-known interests against new set of interests, and remove/add interests accordingly, in a transaction along with the update of the student object itself
+* Add `parse-interests.js` module for parsing user input in the interests form field
 * Update 'create student' route to also store interests
 * Update forms and detail pages to accommodate interests
 

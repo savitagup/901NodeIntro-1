@@ -97,15 +97,15 @@ Continue working in your `WIP\Ch07\express-server` directory. If you did not com
 ## Template creation steps:
 1. Create a `views` directory at the same level as `server.js`
 
-2. Into your views directory copy the files from within the /views directory at the sme level as THIS README.
+2. Into your views directory copy the files from within the `/views` directory at the sme level as THIS README.
    
-3. Open Layout.pug and see how it contains the basic html, head and body elements. Notice the use of **include foot**. Open foot.pug to 
+3. Open `Layout.pug` and see how it contains the basic html, head and body elements. Notice the use of **include foot**. Open `foot.pug` to 
 
-4. Open and view index.pug - it (and other files) extend layout in order to replicate layout for each page. Notice how index will use the passed in student data.
+4. Open and view `index.pug` - it (and other files) extend layout in order to replicate layout for each page. Notice how index will use the passed in student data.
 
-5. Open and view class.pug. Note hw it includes an external JS file as well as embeds JS.
+5. Open and view `class.pug`. Note hw it includes an external JS file as well as embeds JS.
    
-6. Open and view about.pug. Note its use of mailto and normal link.
+6. Open and view `about.pug`. Note its use of mailto and normal link.
 
 ## Run the application
 1. If running solution, install Node dependencies `npm install`
