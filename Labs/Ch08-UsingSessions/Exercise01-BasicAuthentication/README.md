@@ -60,7 +60,7 @@ new code has been added to configure a session
 1. In server.js, find the new require for `sessions-promises`.
 	` const expressSession = require("express-session");`
 
-1. Note how config.json now contains a randomly generated secret key, and how this is used in the express-session configuration in server.js.
+1. Note how config.json now contains a randomly generated secret key, and how this is used in the express-session configuration in `server.js`.
 
 ## Add custom errors
 

@@ -13,7 +13,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 0 public folders
 
-1. Open 0server-public.js. A quick way to make static assets available is to use the middleware on line 7 - this makes what is available in the public directory available. 
+1. Open `0server-public.js`. A quick way to make static assets available is to use the middleware on line 7 - this makes what is available in the public directory available. 
 
     Sometimes this is all people use Node and express for as it makes it quick and easy to test static assest from an http server rather than using the local file:// protocol. 
 
@@ -21,7 +21,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 1. Notice the only other route defined is /.
 
-1. From the terminal type `node 0` then hit tab to autocomplete to node 0server-public.js. Hit return to start the server, control click to open the browser.
+1. From the terminal type `node 0` then hit tab to autocomplete to node `0server-public.js`. Hit return to start the server, control click to open the browser.
 
 1. You should see the welcome page from the / route.
 
@@ -34,11 +34,11 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 1 Logging time
 
-1. Open 1server-logtime.js. Notice the port it will start on.
+1. Open `1server-logtime.js`. Notice the port it will start on.
 
 1. Note how the request is being changed form one middleware to the next.
 
-1. From the terminal type node 1 then hit tab to autocomplete to node 1server-logtime.js. Hit return to start the server, control click to open the browser.
+1. From the terminal type node 1 then hit tab to autocomplete to node `1server-logtime.js`. Hit return to start the server, control click to open the browser.
 
 1. What is in the console?
 1. What is in the browser?
@@ -51,7 +51,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 2 Changing request object
 
-1. Open 2server-change-req.js. Notice the port it will start on.
+1. Open `2server-change-req.js`. Notice the port it will start on.
 
 1. Note the additional property to the request object on line 14. This makes request.chance available to future middleware.
 
@@ -62,7 +62,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 3 Site down
 
-1. Open 3server-site-down.js. Notice the port it will start on.
+1. Open `3server-site-down.js`. Notice the port it will start on.
 
 1. Note the use of sendFile on line 10 - this will cause all in coming request to go the site down page. you coudl do this to temporarily halt the serving of any other pages. 
 
@@ -72,7 +72,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 4 Server unreachable
 
-1. Open 4server-no-return.js. Notice the port it will start on.
+1. Open `4server-no-return.js`. Notice the port it will start on.
 
 1. From the terminal type node the number of this file, then hit tab to autocomplete to run the file. Hit return to start the server, control click to TRY to open the browser. Notice it does not load.
 
@@ -83,11 +83,11 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 5 Server router
 
-1. Open 5server-router.js. Notice the port it will start on.
+1. Open `5server-router.js`. Notice the port it will start on.
 
-1. Notice the order of the middleware, 5server-router.js line 8 alters the request object by adding a message, and calls next().
+1. Notice the order of the middleware, `5server-router.js` line 8 alters the request object by adding a message, and calls next().
 
-1. Line 14 requires routes/index.js and if you look in this file, the message is appended to.  
+1. Line 14 requires `routes/index.js` and if you look in this file, the message is appended to.  
 
 1. From the terminal type `node` space and then the number of this file, then hit tab to autocomplete to run the file. Hit return to start the server, control click to open the browser. Is it as you expect?
 
@@ -95,7 +95,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 6 Favicons and capitals
 
-1. Open 6server-favicons-caps.js. Notice the port it will start on.
+1. Open `6server-favicons-caps.js`. Notice the port it will start on.
 
 1. In the server file, notice the require for serve-favicon and the entry in package.json
 
@@ -124,7 +124,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 7 Server 404
 
-1. Open 7server-404.js. Notice the port it will start on.
+1. Open `7server-404.js`. Notice the port it will start on.
 
 1. Notice how the last middleware assumes that if you have reached it, we have a 404.
 
@@ -134,7 +134,7 @@ There is no code to be copied in these demos, these directions can be opened on 
 
 ### 8 Server errors
 
-1. Open 8server-error.js. Notice the port it will start on.
+1. Open `8server-error.js`. Notice the port it will start on.
 
 1. Notice on line 21 there is a new Error thrown. Express understands to return this type of synchrounous error.
 
