@@ -5,7 +5,7 @@
 
 ## Directory and files
 
-1. In your \WIP directory, create your working directory: `\WIP\Ch05\`
+1. In your `\WIP` directory, create your working directory: `\WIP\Ch05\`
 
 1. In this directory, create a file called `database-practice.js`
 

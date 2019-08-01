@@ -8,7 +8,7 @@ NOTE: You can refer to the demo code for hints/help on this lab.
 
 ## Dir/File setup
 
-1. In your \WIP directory, create the directory structure `WIP\Ch06\http-server`
+1. In your `\WIP` directory, create the directory structure `WIP\Ch06\http-server`
 
 1. Create a file called `server.js`
 

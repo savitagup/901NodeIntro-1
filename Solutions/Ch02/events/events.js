@@ -37,7 +37,7 @@ emitter.on('break', doWorkHandler4);
 
 emitter.emit('work');
 emitter.emit('work');
- emitter.emit('break');
+emitter.emit('break');
 
 
 

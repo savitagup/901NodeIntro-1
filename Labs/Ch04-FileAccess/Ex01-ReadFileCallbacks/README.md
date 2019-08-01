@@ -2,7 +2,7 @@
 
 ## Directory and files
 
-1. In your \WIP directory, create directories `\WIP\Ch04\part1`
+1. In your `\WIP` directory, create directories `\WIP\Ch04\part1`
 
 1. In this directory, create a file called `error-first-callback.js`
 

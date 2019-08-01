@@ -5,7 +5,7 @@
 
 ## Directory and files
 
-1. In your \WIP directory, create your working directory: `\WIP\Ch01\js`
+1. In your `\WIP` directory, create your working directory: `\WIP\Ch01\js`
 
 ## Steps
 

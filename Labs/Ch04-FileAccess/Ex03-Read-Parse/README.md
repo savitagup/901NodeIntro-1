@@ -6,7 +6,7 @@ Read a file of temperatures for the week into your program and use a package to 
 
 ## Directory and files
 
-1. In your \WIP directory, create directory structure: `\WIP\Ch04\read-weather`
+1. In your `\WIP` directory, create directory structure: `\WIP\Ch04\read-weather`
 
 1. In this directory, create a file called `weather.json`
 

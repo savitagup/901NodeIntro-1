@@ -6,7 +6,7 @@
 
 ## Dir/File setup steps
 
-1. In your \WIP directory, create the directory structure `WIP\Ch07\express-server`
+1. In your `\WIP` directory, create the directory structure `WIP\Ch07\express-server`
 
 1. Create a file called `server.js`
 
@@ -49,7 +49,7 @@
     * A callback (accepting a `req` and `res` argument), that specifies the logic to execute for the route
 
     ```javascript
-        router.get("/", (req, res) => {
+    router.get("/", (req, res) => {
         res.send("Hello world! From the main page");
     });
     ```

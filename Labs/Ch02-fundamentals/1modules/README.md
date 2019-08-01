@@ -78,7 +78,7 @@
 
 1. Now call the add function passing two values and console log the result.
     ```javascript
-        console.log(`1+2=`,myCalc.add(1,2));
+        console.log(`1+2=`, myCalc.add(1,2));
     ```
 
 1. Now create subtract and multiply functions and call those with values to test them as well.
@@ -149,7 +149,7 @@
 
 1. Create a `call-band.js` file which uses (requires) the `bands.js` module. Inside, create a band object similar to this:
     ```javascript
-        const beatles = new Band('The Beatles', ['John', 'Paul', 'George', 'Ringo']);
+    const beatles = new Band('The Beatles', ['John', 'Paul', 'George', 'Ringo']);
     ```
     
 1. Call each of the functions and log the output. 

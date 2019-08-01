@@ -4,7 +4,7 @@
 
 ## Steps
 
-1. In your \WIP directory, create the directory structure \WIP\Ch03\npm-with-package
+1. In your `\WIP` directory, create the directory structure \WIP\Ch03\npm-with-package
 
 1. Open a command prompt at that location (VSCode integrated terminal) and issue this command:
 `npm init`
