@@ -7,7 +7,7 @@
 
 1. In your `\WIP` directory, create the directory structure `\WIP\Ch02\globals`
 
-1. Create a file callzbed `inputs.js`
+1. Create a file called `inputs.js`
 
 1. READ: The `process` object is a global that provides information about, and control over, the current Node.js process. As a global, it is always available to Node.js applications without using require().
 
