@@ -75,7 +75,7 @@ Please follow the steps while viewing the project at:
 
 	This code is now returning the error handlng middleware we have seen used before. Inside, it uses the errorReporter to report. 	
 
-	Depending on the envuronment either `err.stack` (when in development mode) or `null` (when not in development mode) is used set for the `stackTrace` variable
+	Depending on the environment either `err.stack` (when in development mode) or `null` (when not in development mode) is used set for the `stackTrace` variable
 	
 	The `errorReporter.report()` is called with the `err` object and a new object containing `req` and `res` as properties with the same name.
 

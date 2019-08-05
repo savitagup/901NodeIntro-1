@@ -6,7 +6,7 @@
 * Create a WIP directory that is ignored by Git tracking via the .gitignore file.
 
 ## Make note of this MAGIC NUMBER (will be needed in exercise):
-42
+11
 
 ### Estimated Completion Time 
 10 minutes
