@@ -9,19 +9,24 @@
 
 1. Use the `npm ls -g` command to see what has already been installed globally. Scroll through the file to get a sense of the structure.
 
-1. The first entry is a package called `knex`. Knex allows your projects to connect to databases. You really should only install globally tools which your projects don’t depend on.  
+1. The first entry is a package called `knex`. Knex allows your projects to connect to databases. Later this will be used in the chapter on databases.  
 
 1. You can also run this command to see if something in particular is installed globally.
 
     ``` npm -g ls knex ```
 
-1. Remove the knex from being available globally by using this command:
-    ``` npm -g rm knex ```
+2. Lets say you have installed a package globally that you didnt mean to. For example the package is-odd will tell you just that, if a number is odd. Install this now with:  
+    ``` npm -g i is-odd```
+
+3. Check that it is there using
+    ``` npm -g ls is-odd ```
+
+4. We can remove packages like is-odd from being available globally by using this command. Try this now:
+    ``` npm -g rm is-odd ```
 
     an alternative command is:
-    ``` npm -g uninstall knex ```
+    ``` npm -g uninstall is-odd ```
 
-
-1. Hit the up arrows to go back and try to list the global entry from knex - it should now be gone (listed as -- (empty))
+5. Hit the up arrows to go back and try to list the global entry for is-odd - it should now be gone (listed as -- (empty))
 
 
