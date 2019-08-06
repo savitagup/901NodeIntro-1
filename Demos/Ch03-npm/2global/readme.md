@@ -9,7 +9,7 @@
 
 1. Use the `npm ls -g` command to see what has already been installed globally. Scroll through the file to get a sense of the structure.
 
-1. The first entry is a package called `knex`. Knex allows your projects to connect to databases. Later this will be used in the chapter on databases.  
+1. Notice a package called `knex` listed. Knex allows your projects to connect to databases. Later this will be used in the chapter on databases.  
 
 1. You can also run this command to see if something in particular is installed globally.
 
