@@ -4,7 +4,7 @@
 
 ## Steps
 
-1. In your `\WIP` directory, create the directory structure \WIP\Ch03\npm-with-package
+1. In your `\WIP` directory, create the directory structure `\WIP\Ch03\npm-with-package`
 
 1. Open a command prompt at that location (VSCode integrated terminal) and issue this command:
 `npm init`
@@ -30,7 +30,7 @@
     console.log(moment().format('MM-DD-YYYY'));
     ```
 
-1. execute the code using `node timeExample.js` or leave off the `.js` extension. Remember - you MUST be in the location of this file to execute it. Can open the terminal at the correct location by right-clicking the file and choosing Open Terminal in VS Code.
+1. Execute the code using `node timeExample.js` or leave off the `.js` extension. Remember - you MUST be in the location of this file to execute it. Can open the terminal at the correct location by right-clicking the file and choosing Open Terminal in VS Code.
 
 1. Visit the website [momentjs.com](http://momentjs.com) and browse the front page of examples.
 
