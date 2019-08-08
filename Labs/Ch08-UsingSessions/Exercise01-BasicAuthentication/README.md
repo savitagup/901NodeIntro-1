@@ -19,15 +19,9 @@ Please follow the steps while viewing the project at:
 ## Run the application
 1. Install dependencies `npm install`
 
-1. Note the security warnings. Follow the instructions to run `npm audit`.
+2. Run the server `node server.js`
 
-	Which package had a vulnerability?
-
-1. Run the command as instructed to fix the issue.
-
-1. Run the server `node server.js`
-
-1. Point a browser at the URL `http://localhost:3000`
+3. Point a browser at the URL `http://localhost:3000`
 
 
 ## Steps:
@@ -38,18 +32,18 @@ Please follow the steps while viewing the project at:
 new code has been added to configure a session
 
 	```javascript
-		router.use(bodyParser.urlencoded({extended: true}));
+	router.use(bodyParser.urlencoded({extended: true}));
 
-		router.use(expressSession({
-			secret: config.sessions.secret,
-			resave: false,
-			saveUninitialized: false
-		}));
+	router.use(expressSession({
+		secret: config.sessions.secret,
+		resave: false,
+		saveUninitialized: false
+	}));
 
-		router.use(require("./middleware/sessions-promises"));
+	router.use(require("./middleware/sessions-promises"));
 
-		router.use(require("./routes/index.js"));
-		router.use(require("./routes/users.js"));
+	router.use(require("./routes/index.js"));
+	router.use(require("./routes/users.js"));
 	```
 
 
@@ -85,5 +79,3 @@ new code has been added to configure a session
 	- The original error message and stack trace are only displayed in situations where it’s safe to do so, depending on the status code of the error and whether the application is running in development mode or not.
 	- Non-client errors (which usually means a bug has occurred, or something else that is of interest to the developer) are logged to the terminal.
  	- Error reporting is changed to only happen when a bug occurs, but not for other kinds of errors.
-
-

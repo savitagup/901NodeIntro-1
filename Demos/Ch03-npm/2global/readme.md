@@ -28,5 +28,3 @@
     ``` npm -g uninstall is-odd ```
 
 5. Hit the up arrows to go back and try to list the global entry for is-odd - it should now be gone (listed as -- (empty))
-
-
