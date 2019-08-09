@@ -14,7 +14,7 @@ Please follow the steps while viewing the project at:
 
 
 ## Steps
-1. You need to navigate to the directory Labs/Ch09-Validation-Security-RelationalData/Exercise12-CSRF/__End__/code
+1. You need to navigate to the directory `\901NodeIntro\Solutions\Ch09\express-server9-2`
 1. Install: `csurf`
 	- Note how in `errors.js`, a new type of error has been added: `UnauthorizedError`
 	- Note in `server.js` how:

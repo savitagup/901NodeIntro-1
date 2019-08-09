@@ -14,6 +14,8 @@ Please follow the steps while viewing the project at:
 
 
 ## Steps
+1. Navigate to `\901NodeIntro\Solutions\Ch09\express-server9-1`
+
 1. Installed in package.json: `checkit`. Find the docs on npm, what does this do
 
 1. Note how `server.js` has a new middleware defined that:

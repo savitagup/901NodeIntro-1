@@ -17,7 +17,7 @@ Please follow the steps while viewing the project at:
 * Update forms and detail pages to accommodate interests
 
 ## Steps
-1. You need to navigate to the directory Labs/Ch09-Validation-Security-RelationalData/Exercise14-Relations/__End__/code
+1. You need to navigate to the directory `\901NodeIntro\Solutions\Ch09\express-server9-4`
 1. Note how a new migration file has been added as `migrations/20170325192133_interests.js`. This specifies the schema for the new `interests` table, that relates to the `students` table that we already have.
 1. Note the use of a foreign key.
 1. Note how the `lib/create-student-object.js` module has been updated, to also automatically fetch a student’s interests (when the calling code asks for it, using an option).

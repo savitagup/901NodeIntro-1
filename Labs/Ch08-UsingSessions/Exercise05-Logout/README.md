@@ -8,7 +8,7 @@ You will be viewing an updated project based on our previous projects which demo
 * Add logout route to `routes/users.js` that destroys the session
 
 Please follow the steps while viewing the project at:
-`\901NodeIntro\Solutions\Ch08\express-server8-4`
+`\901NodeIntro\Solutions\Ch08\express-server8-5`
 
 
 ## Steps:
