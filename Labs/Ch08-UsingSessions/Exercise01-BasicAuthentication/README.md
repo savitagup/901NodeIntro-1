@@ -17,6 +17,8 @@ Please follow the steps while viewing the project at:
 
 
 ## Run the application
+1. Navigate to `\901NodeIntro\Solutions\Ch08\express-server8-1`
+
 1. Install dependencies `npm install`
 
 2. Run the server `node server.js`

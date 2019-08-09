@@ -22,11 +22,12 @@ Please follow the steps while viewing the project at:
 `\901NodeIntro\Solutions\Ch08\express-server8-2`
 
 ## Run the application
-1. Install Node dependencies `npm install`
-1. Run the server `node server.js`
-1. Point a browser at the URL `http://localhost:3000`
-1. You should see the output from the server. 
-1. Login with the password: secretpassword
+1. Navigate to `\901NodeIntro\Solutions\Ch08\express-server8-2`
+2. Install Node dependencies `npm install`
+3. Run the server `node server.js`
+4. Point a browser at the URL `http://localhost:3000`
+5. You should see the output from the server. 
+6. Login with the password: secretpassword
 
 
 ## Steps:

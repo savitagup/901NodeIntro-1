@@ -14,6 +14,8 @@ Please follow the steps while viewing the project at:
 
 ## Steps:
 
+1. Navigate to `\901NodeIntro\Solutions\Ch08\express-server8-4`
+
 1. Note how the `middleware/fetch-user.js` middleware has been modified to also show the currently logged-in user in `res.locals` - this makes it available to all templates as a template local.
 
 1. Accordingly, the `views/layout.pug` template was modified to check whether a `user` local exists - if not, it shows the login/signup menu items.

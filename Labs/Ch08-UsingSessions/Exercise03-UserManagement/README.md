@@ -14,6 +14,8 @@ Please follow the steps while viewing the project at:
 
 
 ## Steps
+1. 1. Navigate to `\901NodeIntro\Solutions\Ch08\express-server8-3`
+
 1. Installed in package.json: `scrypt-for-humans`, `database-error`
 
 1. Note how a new migration has been added at `20170325191954_users.js`, defining the ‘users’ table. Especially important is the `.unique()` property on the `username` column.
